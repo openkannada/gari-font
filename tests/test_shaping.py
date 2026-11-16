@@ -75,3 +75,25 @@ def test_new_order_shapes_like_old_order(shaper, old_order):
 
 def test_kssa_uses_its_ligature(shaper):
     assert len(shaper.glyphs(KSSA)) == 1
+
+
+NEW_CHARACTERS = {
+    0x0CDC: "ARCHAIC SHRII",
+    0x0CDD: "NAKAARA POLLU",
+    0x0CF3: "COMBINING ANUSVARA ABOVE RIGHT",
+}
+
+
+@pytest.mark.parametrize("codepoint", sorted(NEW_CHARACTERS))
+def test_new_character_has_a_glyph_with_ink(codepoint):
+    font = TTFont(FONT)
+    name = font.getBestCmap().get(codepoint)
+    assert name is not None
+    assert font["glyf"][name].numberOfContours > 0
+
+
+@pytest.mark.parametrize(
+    "text", ["\u0c85\u0cb5\u0ca8\u0cdd", "\u0c95\u0cf3", "\u0cdc\u0c97\u0ca3\u0cc7\u0cb6"]
+)
+def test_new_characters_shape_without_a_dotted_circle(shaper, text):
+    assert not shaper.inserted_dotted_circle(text)

@@ -8,6 +8,10 @@ Unreleased (1.300)
 	draws the virama on the base, as old-order shaping does.
 	tools/add_knd2.py makes these changes.
 	* Added shaping tests (tests/test_shaping.py) and CI.
+	* Added U+0CDC KANNADA ARCHAIC SHRII, U+0CDD KANNADA LETTER
+	NAKAARA POLLU and U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT,
+	drafted with kannadi tools/glyphdraft from Gari's own stems, weight and
+	anusvara. Drafts for a Kannada reader to approve.
 
 2012-08-11 Aravinda VK <hallimanearavind@gmail.com>
 	* v1.2 Added missing halegannada glyphs due to which fc-scan failed to recognize the language.

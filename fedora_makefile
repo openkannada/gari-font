@@ -1,4 +1,4 @@
 default:
-	./generate.pe Navilu.sfd
+	./generate.pe Gari.sfd
 clean:
 	rm -rf *.ttf

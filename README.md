@@ -1,15 +1,31 @@
-# tar.gz for fedora packaging
+# Gari
 
-    make fedora
-    
-Source and Binary tar.gz will be created in the /tmp/ directory. Ex: navilu-1.2.tar.gz  navilu-ttf-1.2.tar.gz
+Gari is a Kannada handwriting-style font. It is a modified version of Navilu by Aravinda VK, which is based on work by the Indian Institute of Science, Bangalore.
 
-# Generate Font
+Navilu is licensed under the SIL Open Font License 1.1 with the Reserved Font Name "Navilu". The license does not allow a modified version to use that name, so this version is called Gari. Gari is under the same license; see `COPYING`.
+
+## Changes from Navilu 1.2
+
+See `ChangeLog`. In short:
+
+- New-order Kannada shaping (`knd2`), which HarfBuzz and DirectWrite use when a font has it, alongside the old `knda` rules.
+
+## Install
+
+Copy `Gari.ttf` to your fonts folder (`~/.fonts` on Linux, then run `fc-cache`), or open it and choose Install on macOS or Windows.
+
+## Build
+
+Build `Gari.ttf` from `Gari.sfd` with FontForge:
 
     make
-    
-ttf file will be created, copy to ~/.fonts directory and run fc-cache
 
-# Download Font and Install
+`make fedora` writes source and binary tarballs to `/tmp`.
 
-Download ttf font and install by copying to fonts directory. (~/.fonts/ in Linux)
+## Test
+
+Run the shaping tests against the built font (needs [uv](https://docs.astral.sh/uv/)):
+
+    uv run pytest
+
+Set `FONT=path/to/font.ttf` to test another build.

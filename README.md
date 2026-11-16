@@ -9,6 +9,7 @@ Navilu is licensed under the SIL Open Font License 1.1 with the Reserved Font Na
 See `ChangeLog`. In short:
 
 - New-order Kannada shaping (`knd2`), which HarfBuzz and DirectWrite use when a font has it, alongside the old `knda` rules.
+- U+0CDC ARCHAIC SHRII, U+0CDD NAKAARA POLLU and U+0CF3 COMBINING ANUSVARA ABOVE RIGHT.
 
 ## Install
 

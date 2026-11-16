@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends fontforge
+      - name: Build the font from the source
+        run: rm -f Gari.ttf && make && test -s Gari.ttf
+      - uses: astral-sh/setup-uv@v10.3.3
+      - run: uv sync --locked
+      - run: uv run ruff check tests tools/add_knd2.py
+      - run: uv run ruff format --check tests tools/add_knd2.py
+      - run: uv run pytest -q

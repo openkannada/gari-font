@@ -1,23 +1,23 @@
-VERSION=1.2
+VERSION=1.300
 default:
-	./generate.pe Navilu.sfd; echo "Navilu.ttf file generated, copy to ~/.fonts/ and run fc-cache"
+	./generate.pe Gari.sfd && echo "Gari.ttf file generated, copy to ~/.fonts/ and run fc-cache"
 fedora:
-	rm -rf /tmp/navilu-ttf-${VERSION}
-	mkdir /tmp/navilu-ttf-${VERSION}
-	cp ChangeLog COPYING Navilu.ttf README /tmp/navilu-ttf-${VERSION}/
+	rm -rf /tmp/gari-ttf-${VERSION}
+	mkdir /tmp/gari-ttf-${VERSION}
+	cp ChangeLog COPYING Gari.ttf README /tmp/gari-ttf-${VERSION}/
 
-	rm -rf /tmp/navilu-${VERSION}
-	mkdir /tmp/navilu-${VERSION}
-	cp ChangeLog COPYING Navilu.sfd generate.pe README /tmp/navilu-${VERSION}/
-	cp fedora_makefile /tmp/navilu-${VERSION}/Makefile
+	rm -rf /tmp/gari-${VERSION}
+	mkdir /tmp/gari-${VERSION}
+	cp ChangeLog COPYING Gari.sfd generate.pe README /tmp/gari-${VERSION}/
+	cp fedora_makefile /tmp/gari-${VERSION}/Makefile
 
 	cd /tmp/; \
-	tar -cvzf navilu-ttf-${VERSION}.tar.gz navilu-ttf-${VERSION}/; \
-	tar -cvzf navilu-${VERSION}.tar.gz navilu-${VERSION}/; \
-	rm -rf navilu-ttf-${VERSION}; \
-	rm -rf navilu-${VERSION}; 
+	tar -cvzf gari-ttf-${VERSION}.tar.gz gari-ttf-${VERSION}/; \
+	tar -cvzf gari-${VERSION}.tar.gz gari-${VERSION}/; \
+	rm -rf gari-ttf-${VERSION}; \
+	rm -rf gari-${VERSION}; 
 clean:
-	rm -rf /tmp/navilu-ttf-${VERSION}
-	rm -rf /tmp/navilu-${VERSION}
-	rm -rf /tmp/navilu-ttf-${VERSION}.tar.gz
-	rm -rf /tmp/navilu-${VERSION}.tar.gz
+	rm -rf /tmp/gari-ttf-${VERSION}
+	rm -rf /tmp/gari-${VERSION}
+	rm -rf /tmp/gari-ttf-${VERSION}.tar.gz
+	rm -rf /tmp/gari-${VERSION}.tar.gz

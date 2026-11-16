@@ -1,2 +1,4 @@
 *.sfd~
 OTFFiles/
+.venv/
+__pycache__/

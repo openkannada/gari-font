@@ -1,3 +1,14 @@
+Unreleased (1.300)
+	* Renamed to Gari. Navilu is a Reserved Font Name under its SIL Open
+	Font License, so a modified version cannot use it.
+	* Added new-order Kannada shaping (knd2). Every lookup registered for
+	knda is also registered for knd2. The below-base ligatures get knd2
+	twins with virama first. For a cluster that ends in a virama, a knd2
+	contextual rule gives the base its virama form and a pair adjustment
+	draws the virama on the base, as old-order shaping does.
+	tools/add_knd2.py makes these changes.
+	* Added shaping tests (tests/test_shaping.py) and CI.
+
 2012-08-11 Aravinda VK <hallimanearavind@gmail.com>
 	* v1.2 Added missing halegannada glyphs due to which fc-scan failed to recognize the language.
 	Closes: #842960 https://bugzilla.redhat.com/show_bug.cgi?id=842960

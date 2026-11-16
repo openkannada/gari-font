@@ -1,4 +1,7 @@
+import statistics
+
 import pytest
+import uharfbuzz as hb
 from fontTools.ttLib import TTFont
 from kannada import (
     CONSONANTS,
@@ -95,5 +98,26 @@ def test_new_character_has_a_glyph_with_ink(codepoint):
 @pytest.mark.parametrize(
     "text", ["\u0c85\u0cb5\u0ca8\u0cdd", "\u0c95\u0cf3", "\u0cdc\u0c97\u0ca3\u0cc7\u0cb6"]
 )
-def test_new_characters_shape_without_a_dotted_circle(shaper, text):
-    assert not shaper.inserted_dotted_circle(text)
+def test_new_characters_shape_without_notdef(shaper, text):
+    assert 0 not in shaper.glyphs(text)
+
+
+def test_anusvara_above_right_joins_the_consonant_cluster(shaper):
+    buf = hb.Buffer()
+    buf.add_str("\u0c95\u0cf3")
+    buf.guess_segment_properties()
+    hb.shape(shaper.font, buf)
+    assert {info.cluster for info in buf.glyph_infos} == {0}
+
+
+@pytest.mark.parametrize("codepoint", [0x0CDC, 0x0CDD])
+def test_new_letters_are_spaced_like_the_consonants(codepoint):
+    font = TTFont(FONT)
+    cmap, glyf, hmtx = font.getBestCmap(), font["glyf"], font["hmtx"]
+
+    def right_bearing(name):
+        return hmtx[name][0] - glyf[name].xMax
+
+    consonants = [cmap[ord(c)] for c in CONSONANTS if ord(c) in cmap]
+    median = statistics.median(right_bearing(n) for n in consonants)
+    assert right_bearing(cmap[codepoint]) >= median / 2

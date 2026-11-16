@@ -9,6 +9,7 @@ from fontTools.ttLib import TTFont
 
 VIRAMA = "\u0ccd"
 ZWNJ = "\u200c"
+ZWJ = "\u200d"
 RA = "\u0cb0"
 DOTTED_CIRCLE = 0x25CC
 CONSONANTS = tuple(chr(cp) for cp in [*range(0x0C95, 0x0CBA), 0x0CDE] if cp not in (0x0CA9, 0x0CB4))
@@ -33,17 +34,6 @@ class Shaper:
             (i.codepoint, p.x_offset, p.y_offset, p.x_advance)
             for i, p in zip(buf.glyph_infos, buf.glyph_positions, strict=True)
         ]
-
-    def drawing(self, text: str) -> tuple[list[tuple[int, int, int]], int]:
-        """Each glyph with its absolute position, in drawing order, and the total advance.
-
-        2 shapings with the same drawing look the same even when their glyph order differs.
-        """
-        x, placed = 0, []
-        for gid, dx, dy, advance in self.shape(text):
-            placed.append((gid, x + dx, dy))
-            x += advance
-        return sorted(placed), x
 
     def glyphs(self, text: str, features: dict | None = None) -> list[int]:
         return [g for g, *_ in self.shape(text, features)]

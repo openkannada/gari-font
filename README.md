@@ -10,11 +10,17 @@ See `ChangeLog`. In short:
 
 - New-order Kannada shaping (`knd2`), which HarfBuzz and DirectWrite use when a font has it, alongside the old `knda` rules.
 
+## Install
+
+Copy `Gari.ttf` to your fonts folder (`~/.fonts` on Linux, then run `fc-cache`), or open it and choose Install on macOS or Windows.
+
 ## Build
 
 Build `Gari.ttf` from `Gari.sfd` with FontForge:
 
     make
+
+`make fedora` writes source and binary tarballs to `/tmp`.
 
 ## Test
 

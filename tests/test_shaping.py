@@ -5,6 +5,7 @@ from kannada import (
     FONT,
     RA,
     VIRAMA,
+    ZWJ,
     ZWNJ,
     Shaper,
     clusters,
@@ -58,10 +59,17 @@ def test_every_consonant_takes_the_arkavattu(shaper):
     assert broken == []
 
 
-def test_new_order_draws_like_old_order(shaper, old_order):
+def joiner_variants(cluster: str) -> list[str]:
+    return [cluster.replace(VIRAMA, VIRAMA + j, 1) for j in (ZWJ, ZWNJ)]
+
+
+def test_new_order_shapes_like_old_order(shaper, old_order):
     # Old order never applies the font's KSSA ligature, so KSSA is checked on its own below.
-    texts = clusters() + three_consonant_clusters() + [c + VIRAMA for c in clusters()]
-    differ = [t for t in texts if KSSA not in t and shaper.drawing(t) != old_order.drawing(t)]
+    two, three = clusters(), three_consonant_clusters()
+    final = [c + VIRAMA for c in two + three]
+    joined = [v for c in two + [c + VIRAMA for c in two] for v in joiner_variants(c)]
+    texts = [t for t in two + three + final + joined if KSSA not in t]
+    differ = [t for t in texts if shaper.shape(t) != old_order.shape(t)]
     assert differ == []
 
 

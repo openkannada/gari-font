@@ -1,6 +1,6 @@
 # Notes for aravindavk/Navilu
 
-Gari is a renamed fork, so its changes cannot go back as one pull request under the Navilu name. If Prasad wants to offer them upstream, the useful parts are:
+Gari is a renamed fork, so its changes cannot go back as one pull request under the Navilu name. To offer them upstream, the useful parts are:
 
 - `tools/add_knd2.py`, which adds new-order (`knd2`) shaping to `Navilu.sfd` without touching the `knda` rules. Run on upstream `Navilu.sfd`, it gives a font in which every 2- and 3-consonant cluster, with or without a final virama, shapes under `knd2` exactly as under `knda`.
 - The 3 drafted glyphs for U+0CDC, U+0CDD and U+0CF3, from kannadi `tools/glyphdraft`.

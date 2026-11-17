@@ -27,6 +27,7 @@ def test_license_keeps_the_upstream_reserved_font_name_notice(names):
     assert any("Reserved Font Name Navilu" in s for s in names[LICENSE])
 
 
-def test_copyright_credits_the_upstream_authors(names):
+def test_copyright_credits_the_upstream_authors_and_the_fork(names):
     text = " ".join(names[COPYRIGHT])
     assert "Aravinda" in text and "Indian Institute of Science" in text
+    assert "2026, The Open Kannada Authors" in text

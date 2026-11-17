@@ -14,4 +14,5 @@ Because Navilu reserves its name, this modified version may not be called Navilu
 | Files | License |
 |---|---|
 | The font: `Gari.sfd`, `Gari.ttf`, `generate.pe`, the Makefiles and `tools/release` | OFL-1.1, see [OFL.txt](OFL.txt) |
-| Scripts and tests written for this fork: `tools/add_knd2.py`, `tests/` | MIT OR Apache-2.0, copyright The Open Kannada Authors, see [LICENSES](LICENSES) |
+| Scripts, tests and configuration written for this fork: `tools/add_knd2.py`, `tests/`, `pyproject.toml`, `uv.lock`, `.github/workflows/ci.yml` | MIT OR Apache-2.0, copyright The Open Kannada Authors, see [LICENSES](LICENSES) |
+| Documents written for this fork: `README.md`, `NOTICE.md`, `CONTRIBUTING.md`, `drafts/` | CC BY 4.0, copyright The Open Kannada Authors, see [LICENSES/CC-BY-4.0.txt](LICENSES/CC-BY-4.0.txt) |

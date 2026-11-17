@@ -4,11 +4,11 @@ default:
 fedora:
 	rm -rf /tmp/gari-ttf-${VERSION}
 	mkdir /tmp/gari-ttf-${VERSION}
-	cp ChangeLog COPYING Gari.ttf README /tmp/gari-ttf-${VERSION}/
+	cp ChangeLog OFL.txt Gari.ttf README /tmp/gari-ttf-${VERSION}/
 
 	rm -rf /tmp/gari-${VERSION}
 	mkdir /tmp/gari-${VERSION}
-	cp ChangeLog COPYING Gari.sfd generate.pe README /tmp/gari-${VERSION}/
+	cp ChangeLog OFL.txt Gari.sfd generate.pe README /tmp/gari-${VERSION}/
 	cp fedora_makefile /tmp/gari-${VERSION}/Makefile
 
 	cd /tmp/; \

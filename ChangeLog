@@ -1,4 +1,8 @@
 Unreleased (1.300)
+	* Renamed COPYING to OFL.txt. Removed tools/generate_fonts.py, an
+	unused GPL script from upstream, and upstream's FUNDING.yml. Added
+	NOTICE.md and CONTRIBUTING.md. Scripts and tests written for this
+	fork are under MIT OR Apache-2.0.
 	* Renamed to Gari. Navilu is a Reserved Font Name under its SIL Open
 	Font License, so a modified version cannot use it.
 	* Added new-order Kannada shaping (knd2). Every lookup registered for

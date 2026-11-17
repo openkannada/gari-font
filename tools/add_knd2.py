@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+# SPDX-License-Identifier: MIT OR Apache-2.0
 """Add new-order Kannada shaping (knd2) to a FontForge source that only has knda.
 
 Run with FontForge's Python: fontforge -lang=py -script tools/add_knd2.py Gari.sfd

@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+# SPDX-License-Identifier: MIT OR Apache-2.0
 """Kannada test strings and a HarfBuzz wrapper shared by the tests."""
 
 import io

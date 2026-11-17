@@ -7,11 +7,11 @@ fi
 
 rm -rf /tmp/gari-kannada-ttf-$1
 mkdir /tmp/gari-kannada-ttf-$1
-cp ../ChangeLog ../COPYING ../Gari.ttf ../README /tmp/gari-kannada-ttf-$1/
+cp ../ChangeLog ../OFL.txt ../Gari.ttf ../README /tmp/gari-kannada-ttf-$1/
 
 rm -rf /tmp/gari-kannada-$1
 mkdir /tmp/gari-kannada-$1
-cp ../ChangeLog ../COPYING ../Gari.sfd ../generate.pe ../Makefile ../README /tmp/gari-kannada-$1/
+cp ../ChangeLog ../OFL.txt ../Gari.sfd ../generate.pe ../Makefile ../README /tmp/gari-kannada-$1/
 
 cd /tmp/
 tar -cvzf gari-kannada-ttf-$1.tar.gz gari-kannada-ttf-$1/

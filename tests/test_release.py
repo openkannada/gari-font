@@ -14,6 +14,7 @@ from fontTools.ttLib import TTFont
 from kannada import CONSONANTS, FONT, VIRAMA
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "tools"))
+import check_release  # noqa: E402
 import finish  # noqa: E402
 import release  # noqa: E402
 import specimen  # noqa: E402
@@ -76,3 +77,16 @@ def test_checksums_list_every_file(tmp_path):
     (tmp_path / "a.txt").write_text("a")
     lines = release.checksums(tmp_path).read_text().splitlines()
     assert lines == [f"{hashlib.sha256(b'a').hexdigest()}  a.txt"]
+
+
+def test_known_failures_match_by_check_code_and_file():
+    known = {
+        "opentype/hmtx_cff_num_glyphs": {"codes": ["x"], "files": ["*.otf"], "reason": "r"},
+        "googlefonts/glyph_coverage": {"codes": ["missing-codepoints"], "reason": "r"},
+    }
+    assert check_release.is_known(("opentype/hmtx_cff_num_glyphs", "x", "Gari-Regular.otf"), known)
+    assert not check_release.is_known(
+        ("opentype/hmtx_cff_num_glyphs", "x", "Gari-Regular.ttf"), known
+    )
+    assert check_release.is_known(("googlefonts/glyph_coverage", "missing-codepoints", ""), known)
+    assert not check_release.is_known(("googlefonts/glyph_coverage", "other", ""), known)

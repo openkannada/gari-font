@@ -7,8 +7,9 @@
 - No font in the release (TTF, OTF, WOFF2) may be named Navilu, the upstream Reserved Font
   Name, in a name record or a CFF name field.
 - fontspector runs the Google Fonts profile on the TTF and the OTF. A FAIL, ERROR or FATAL
-  fails this script unless release/known-fails.toml lists its check and failure code with a
-  reason; a listed failure that no longer occurs is reported, so the list can shrink.
+  fails this script unless release/known-fails.toml lists its check and failure code, and its
+  file matches the entry's file patterns, with a reason; a listed check that no longer fails
+  is reported, so the list can shrink.
 - Shaperglot checks kn_Knda through tools/shaperglot_gate.py; only the characters listed under
   [shaperglot] in known-fails.toml may be missing.
 - The tests run on the release TTF.
@@ -25,6 +26,7 @@ import shlex
 import subprocess
 import sys
 import tomllib
+from fnmatch import fnmatch
 from pathlib import Path
 
 from fontTools.ttLib import TTFont
@@ -54,11 +56,14 @@ def reserved_name_left(path: Path) -> list[str]:
     return found
 
 
-def failures(report: dict) -> set[tuple[str, str]]:
-    """(check id, failure code) for every FAIL, ERROR or FATAL in a fontspector report."""
+Failure = tuple[str, str, str]  # check id, failure code, file name ("" for the family)
+
+
+def failures(report: dict) -> set[Failure]:
+    """Every FAIL, ERROR or FATAL in a fontspector report."""
     return {
-        (check["check_id"], sub.get("code") or "")
-        for sections in report["results"].values()
+        (check["check_id"], sub.get("code") or "", Path(path).name)
+        for path, sections in report["results"].items()
         for checks in sections.values()
         for check in checks
         for sub in check["subresults"]
@@ -66,7 +71,16 @@ def failures(report: dict) -> set[tuple[str, str]]:
     }
 
 
-def fontspector(binary: Path, fonts: list[Path], out: Path) -> set[tuple[str, str]]:
+def is_known(failure: Failure, known: dict) -> bool:
+    """Listed under its check with its code, and its file matches the entry's files, if any."""
+    check, code, name = failure
+    entry = known.get(check)
+    if entry is None or code not in entry["codes"]:
+        return False
+    return any(fnmatch(name, pattern) for pattern in entry.get("files", ["*"]))
+
+
+def fontspector(binary: Path, fonts: list[Path], out: Path) -> set[Failure]:
     report = out / "fontspector.json"
     report.unlink(missing_ok=True)
     command = [str(binary), "--profile", "googlefonts", "--skip-network", "--json", str(report)]
@@ -122,16 +136,18 @@ def main(argv: list[str]) -> int:
 
     known_file = tomllib.loads(KNOWN.read_text())
     allowed = sorted(known_file.pop("shaperglot", {}).get("missing", []))
-    known = {(check, code) for check, entry in known_file.items() for code in entry["codes"]}
     found = fontspector(args.fontspector, [ttf, *otfs], out)
-    for check, code in sorted(found):
-        print(f"fontspector {check} ({code}): {'known' if (check, code) in known else 'NEW'}")
-    for check, code in sorted(known - found):
-        print(f"fontspector {check} ({code}): listed in known-fails.toml but passes now")
+    new = sorted(f for f in found if not is_known(f, known_file))
+    for check in sorted({f[0] for f in found}):
+        print(f"fontspector {check}: {'NEW' if any(f[0] == check for f in new) else 'known'}")
+    for check, code, name in new:
+        print(f"  new: {check} ({code}) in {name or 'the family'}")
+    for check in sorted(set(known_file) - {f[0] for f in found}):
+        print(f"fontspector {check}: listed in known-fails.toml but passes now")
     glot = shaperglot(args.shaperglot_python, ttf, out, allowed)
     passed = tests(ttf)
     print(f"tests on {ttf.name}: {'pass' if passed else 'FAIL'}")
-    return 0 if not named and found <= known and glot and passed else 1
+    return 0 if not named and not new and glot and passed else 1
 
 
 if __name__ == "__main__":

@@ -1,6 +1,7 @@
 VERSION=1.300
+PYTHON ?= python3
 default:
-	./generate.pe Gari.sfd && echo "Gari.ttf file generated, copy to ~/.fonts/ and run fc-cache"
+	./generate.pe Gari.sfd && $(PYTHON) tools/finish.py Gari.ttf && echo "Gari.ttf file generated, copy to ~/.fonts/ and run fc-cache"
 fedora:
 	rm -rf /tmp/gari-ttf-${VERSION}
 	mkdir /tmp/gari-ttf-${VERSION}

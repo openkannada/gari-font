@@ -1,0 +1,14 @@
+# fontspector checks (Google Fonts profile) that fail on the release font for reasons outside
+# this release, with the reason. tools/check_release.py fails on any check not listed here.
+
+"googlefonts/glyph_coverage" = "Gari covers Kannada only; the Google Fonts glyph sets require Latin."
+"googlefonts/glyphsets/shape_languages" = "Follows from glyph_coverage: no Google Fonts glyph set is 80% covered."
+"googlefonts/render_own_name" = "The family name is in Latin letters, which Gari does not have."
+"opentype/code_pages" = "No Windows code page covers Kannada, so none is set."
+"googlefonts/repo/dirname_matches_nameid_1" = "Checks the google/fonts repository layout, which this repository does not use."
+"googlefonts/font_copyright" = "Google Fonts wants 'Copyright YEAR The Familyname Project Authors (url)'. Gari credits 3 holders, the upstream ones under their own names."
+"contour_count" = "period and t are empty, unencoded and unused glyphs inherited from Navilu; removing them would renumber every glyph in the source."
+
+[shaperglot_missing]
+"U+0CBC" = "KANNADA SIGN NUKTA is not drawn in Gari yet; it needs a designed glyph."
+"U+0CBD" = "KANNADA SIGN AVAGRAHA is not drawn in Gari yet; it needs a designed glyph."

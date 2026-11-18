@@ -31,6 +31,16 @@ Run the shaping tests against the built font (needs [uv](https://docs.astral.sh/
 
 Set `FONT=path/to/font.ttf` to test another build.
 
+## Release
+
+    uv sync --group release
+    uv run python tools/release.py
+    uv run python tools/check_release.py --fontspector path/to/fontspector
+
+`tools/release.py` builds `Gari.ttf` with `make`, generates an OTF with FontForge, and writes `dist/Gari/` and `dist/Gari-1.300.zip` with a `.sha256` file. The folder holds the TTF and OTF, WOFF2 for the web, `web/Gari-Kannada.woff2` cut to Kannada for websites, a 1-page `specimen.html`, `OFL.txt`, `FONTLOG.txt` and `SHA256SUMS`.
+
+`tools/check_release.py` runs fontspector with the Google Fonts profile, Shaperglot for `kn_Knda`, and the tests on the release font. `release/known-fails.toml` lists what fails for reasons outside the release, with the reason: Gari has no Latin letters, and it has no nukta (U+0CBC) or avagraha (U+0CBD) yet. The `Release build` workflow does all of this and keeps the zip, its checksum and the reports as artifacts.
+
 ## License
 
 The font is under the SIL Open Font License 1.1; see [OFL.txt](OFL.txt). Gari adds no Reserved Font Name of its own. The scripts and tests written for this fork are under MIT OR Apache-2.0. [NOTICE.md](NOTICE.md) credits the upstream authors and lists which files are under which license. [CONTRIBUTING.md](CONTRIBUTING.md) explains the sign-off.

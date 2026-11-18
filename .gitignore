@@ -2,3 +2,5 @@
 OTFFiles/
 .venv/
 __pycache__/
+build/
+dist/

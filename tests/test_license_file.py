@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2026 The Open Kannada Authors
 # SPDX-License-Identifier: MIT OR Apache-2.0
 """OFL.txt keeps the layout of the SIL template, which license detectors such as GitHub's
-match: the copyright block first, then the license statement and text."""
+match: copyright lines first, then the license statement and text."""
 
 from pathlib import Path
 
@@ -12,11 +12,15 @@ def test_starts_with_the_copyright_block():
     assert OFL.startswith("Copyright (C) 2026, The Open Kannada Authors.\n")
 
 
-def test_keeps_every_copyright_holder_and_the_reserved_font_name():
-    head = OFL.split("This Font Software is licensed")[0]
-    for holder in ("The Open Kannada Authors", "Aravinda VK", "Indian Institute of Science"):
-        assert holder in head
-    assert head.rstrip().endswith("with Reserved Font Name Navilu.")
+def test_copyright_block_keeps_the_upstream_reserved_font_name_scope():
+    # Navilu's font record declared the Reserved Font Name after both upstream holders.
+    head = OFL.split("\n\n")[0].splitlines()
+    assert head == [
+        "Copyright (C) 2026, The Open Kannada Authors.",
+        "Copyright (C) 2011-2012, Aravinda VK <hallimanearavind@gmail.com> (http://aravindavk.in); "
+        "Copyright (C) 2005-2010, Indian Institute of Science, Bangalore; "
+        "with Reserved Font Name Navilu.",
+    ]
 
 
 def test_states_the_license_with_its_current_address():

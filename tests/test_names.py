@@ -25,11 +25,9 @@ def test_family_names_do_not_use_the_reserved_name(names):
 
 
 def test_copyright_keeps_the_upstream_reserved_font_name_notice(names):
-    # OFL-1.1: the Reserved Font Name follows the copyright statement it belongs to.
-    assert any(
-        "Aravinda VK (http://aravindavk.in), with Reserved Font Name Navilu" in s
-        for s in names[COPYRIGHT]
-    )
+    # As in Navilu's font record, the Reserved Font Name follows both upstream holders.
+    expected = "Indian Institute of Science, Bangalore; with Reserved Font Name Navilu"
+    assert any(s.endswith(expected) for s in names[COPYRIGHT])
 
 
 def test_license_record_is_the_short_ofl_statement(names):

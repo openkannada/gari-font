@@ -1,4 +1,19 @@
-Unreleased (1.300)
+2026-11-18 The Open Kannada Authors (1.300)
+	* Ready for release. PostScript name Gari-Regular and full name Gari
+	Regular, no embedding restriction (fsType 0), vendor ID NONE, and a
+	copyright line without line breaks. Typo, hhea and Windows metrics
+	now agree: ascent 2160 and descent 1464 with no line gap. Line height
+	stays 3624 units on macOS; on Windows it grows from 3230 (typo metrics,
+	used by DirectWrite and browsers) or 3400 (GDI) to the same 3624. tools/finish.py drops FontForge's
+	FFTM table and the Macintosh name records, maps U+00A0 to the space,
+	and writes unique glyph names. The 31 duplicate glyph names in
+	Gari.sfd are renamed (glyph131.alt1 and so on), which changes no shaping. The license record holds the short OFL
+	statement (the full text ships as OFL.txt), and the Navilu Reserved
+	Font Name notice follows Aravinda VK's copyright line.
+	* U+200C ZERO WIDTH NON-JOINER and U+200D ZERO WIDTH JOINER map to
+	empty glyphs with no width.
+	* tools/release.py builds TTF, OTF, WOFF2, a Kannada web subset, a
+	specimen and checksums. FONTLOG.txt added.
 	* Renamed COPYING to OFL.txt. Removed tools/generate_fonts.py, an
 	unused GPL script from upstream, and upstream's FUNDING.yml. Added
 	NOTICE.md and CONTRIBUTING.md. Scripts and tests written for this

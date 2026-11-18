@@ -5,6 +5,7 @@ import statistics
 import pytest
 import uharfbuzz as hb
 from fontTools.ttLib import TTFont
+
 from kannada import (
     CONSONANTS,
     FONT,

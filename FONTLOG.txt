@@ -1,0 +1,41 @@
+FONTLOG for Gari
+================
+
+This file records how Gari differs from the font it comes from, and who made it.
+
+
+Basic font information
+----------------------
+
+Gari is a Kannada handwriting typeface. It is a modified version of Navilu 1.2 by Aravinda VK (https://github.com/aravindavk/Navilu), whose glyphs come from work by the Indian Institute of Science, Bangalore. It covers the Kannada block and has no Latin letters.
+
+Gari is licensed under the SIL Open Font License, Version 1.1 (OFL.txt). Navilu reserves its name under that license, so this modified version is called Gari. Gari adds no Reserved Font Name of its own.
+
+Gari comes as 1 style, Regular, in TTF and OTF, and as WOFF2 for the web.
+
+
+ChangeLog
+---------
+
+2026-11-18 (version 1.300)
+- Renamed from Navilu to Gari.
+- New-order Kannada shaping (knd2), which HarfBuzz and DirectWrite use when a font has it, alongside the old knda rules.
+- U+0CDC ARCHAIC SHRII, U+0CDD NAKAARA POLLU and U+0CF3 COMBINING ANUSVARA ABOVE RIGHT, drawn from Gari's own stems and anusvara. They are drafts that a Kannada reader has yet to approve.
+- No embedding restriction (fsType 0), the PostScript name Gari-Regular, and typo, hhea and Windows vertical metrics that agree.
+- ZWNJ and ZWJ map to empty glyphs with no width. Gari has no nukta (U+0CBC) or avagraha (U+0CBD) yet.
+- The full list of changes, with dates, is in ChangeLog.
+
+
+Acknowledgements
+----------------
+
+N: Aravinda VK
+C: Navilu, 2011-2012
+W: http://aravindavk.in
+
+N: Indian Institute of Science, Bangalore
+C: The glyphs Navilu was drawn from, 2005-2010
+
+N: The Open Kannada Authors
+C: Gari: knd2 shaping, the new letters and the release
+W: https://github.com/openkannada

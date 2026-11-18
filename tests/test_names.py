@@ -2,9 +2,10 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 import pytest
 from fontTools.ttLib import TTFont
+
 from kannada import FONT
 
-FAMILY_IDS = (1, 3, 4, 6, 16, 18, 21)
+FAMILY_IDS = (1, 2, 3, 4, 6, 16, 17, 18, 21, 22, 25)
 COPYRIGHT, LICENSE = 0, 13
 
 
@@ -23,11 +24,37 @@ def test_family_names_do_not_use_the_reserved_name(names):
     assert not used
 
 
-def test_license_keeps_the_upstream_reserved_font_name_notice(names):
-    assert any("Reserved Font Name Navilu" in s for s in names[LICENSE])
+def test_copyright_keeps_the_upstream_reserved_font_name_notice(names):
+    # OFL-1.1: the Reserved Font Name follows the copyright statement it belongs to.
+    assert any(
+        "Aravinda VK (http://aravindavk.in), with Reserved Font Name Navilu" in s
+        for s in names[COPYRIGHT]
+    )
+
+
+def test_license_record_is_the_short_ofl_statement(names):
+    # The full text ships as OFL.txt; FontBakery and fontspector reject line breaks here.
+    assert names[LICENSE] == [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. "
+        "This license is available with a FAQ at: https://openfontlicense.org"
+    ]
 
 
 def test_copyright_credits_the_upstream_authors_and_the_fork(names):
     text = " ".join(names[COPYRIGHT])
     assert "Aravinda" in text and "Indian Institute of Science" in text
-    assert "2026, The Open Kannada Authors" in text
+    assert "Copyright 2026 The Open Kannada Authors" in text
+
+
+def test_names_follow_the_family_and_style(names):
+    assert names[1] == ["Gari"] and names[2] == ["Regular"]
+    assert names[4] == ["Gari Regular"] and names[6] == ["Gari-Regular"]
+    assert names[3] == ["1.300;NONE;Gari-Regular"]
+
+
+def test_name_records_have_no_line_breaks(names):
+    assert all("\n" not in s for texts in names.values() for s in texts)
+
+
+def test_no_macintosh_name_records():
+    assert {r.platformID for r in TTFont(FONT)["name"].names} == {3}

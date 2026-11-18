@@ -1,4 +1,5 @@
+PYTHON ?= python3
 default:
-	./generate.pe Gari.sfd
+	./generate.pe Gari.sfd && $(PYTHON) tools/finish.py Gari.ttf
 clean:
 	rm -rf *.ttf

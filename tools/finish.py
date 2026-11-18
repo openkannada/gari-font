@@ -29,10 +29,9 @@ def finish(font: TTFont) -> TTFont:
     if "glyf" in font:
         post = font["post"]
         post.formatType = 2.0
-        post.extraNames, post.mapping = (
-            [],
-            {},
-        )  # rebuilt from the glyph order, which fontTools dedupes
+        # Rebuilt from the glyph order, which fontTools dedupes.
+        post.extraNames = []
+        post.mapping = {}
     return font
 
 

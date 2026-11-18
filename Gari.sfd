@@ -16703,7 +16703,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" at Y
 EndChar
 
-StartChar: glyph131
+StartChar: glyph131.alt1
 Encoding: 65707 -1 278
 Width: 1399
 GlyphClass: 2
@@ -16774,7 +16774,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" A Y
 EndChar
 
-StartChar: glyph132
+StartChar: glyph132.alt1
 Encoding: 65708 -1 279
 Width: 1407
 GlyphClass: 2
@@ -16857,7 +16857,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" B Y
 EndChar
 
-StartChar: glyph133
+StartChar: glyph133.alt1
 Encoding: 65709 -1 280
 Width: 1755
 GlyphClass: 2
@@ -16953,7 +16953,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" C Y
 EndChar
 
-StartChar: glyph134
+StartChar: glyph134.alt1
 Encoding: 65710 -1 281
 Width: 1167
 GlyphClass: 2
@@ -17016,7 +17016,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" D Y
 EndChar
 
-StartChar: glyph135
+StartChar: glyph135.alt1
 Encoding: 65711 -1 282
 Width: 1386
 GlyphClass: 2
@@ -17096,7 +17096,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" E Y
 EndChar
 
-StartChar: glyph136
+StartChar: glyph136.alt1
 Encoding: 65712 -1 283
 Width: 1386
 GlyphClass: 2
@@ -17156,7 +17156,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" F Y
 EndChar
 
-StartChar: glyph137
+StartChar: glyph137.alt1
 Encoding: 65713 -1 284
 Width: 1386
 GlyphClass: 2
@@ -17231,7 +17231,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" G Y
 EndChar
 
-StartChar: glyph138
+StartChar: glyph138.alt1
 Encoding: 65714 -1 285
 Width: 1264
 GlyphClass: 2
@@ -17286,7 +17286,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" H Y
 EndChar
 
-StartChar: glyph139
+StartChar: glyph139.alt1
 Encoding: 65715 -1 286
 Width: 1532
 GlyphClass: 2
@@ -17368,7 +17368,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" I Y
 EndChar
 
-StartChar: glyph140
+StartChar: glyph140.alt1
 Encoding: 65716 -1 287
 Width: 1532
 GlyphClass: 2
@@ -17465,7 +17465,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" J Y
 EndChar
 
-StartChar: glyph141
+StartChar: glyph141.alt1
 Encoding: 65717 -1 288
 Width: 2236
 GlyphClass: 2
@@ -17573,7 +17573,7 @@ EndSplineSet
 Validated: 33
 EndChar
 
-StartChar: glyph142
+StartChar: glyph142.alt1
 Encoding: 65718 -1 289
 Width: 2812
 GlyphClass: 2
@@ -17701,7 +17701,7 @@ EndSplineSet
 Validated: 33
 EndChar
 
-StartChar: glyph143
+StartChar: glyph143.alt1
 Encoding: 65719 -1 290
 Width: 2812
 GlyphClass: 3
@@ -17839,7 +17839,7 @@ Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 13 subtable" glyph
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 7 subtable" J underscore backslash
 EndChar
 
-StartChar: glyph144
+StartChar: glyph144.alt1
 Encoding: 65720 -1 291
 Width: 1456
 GlyphClass: 2
@@ -17910,7 +17910,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" K Y
 EndChar
 
-StartChar: glyph145
+StartChar: glyph145.alt1
 Encoding: 65721 -1 292
 Width: 1456
 GlyphClass: 2
@@ -17998,7 +17998,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" L Y
 EndChar
 
-StartChar: glyph146
+StartChar: glyph146.alt1
 Encoding: 65722 -1 293
 Width: 2134
 GlyphClass: 2
@@ -18079,7 +18079,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" M Y
 EndChar
 
-StartChar: glyph147
+StartChar: glyph147.alt1
 Encoding: 65723 -1 294
 Width: 2152
 GlyphClass: 2
@@ -18170,7 +18170,7 @@ Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 12 subtable" glyph
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 9 subtable" M underscore
 EndChar
 
-StartChar: glyph148
+StartChar: glyph148.alt1
 Encoding: 65724 -1 295
 Width: 2361
 GlyphClass: 2
@@ -18292,7 +18292,7 @@ Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 12 subtable" glyph
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 9 subtable" M a
 EndChar
 
-StartChar: glyph149
+StartChar: glyph149.alt1
 Encoding: 65725 -1 296
 Width: 2468
 GlyphClass: 2
@@ -18371,7 +18371,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" N Y
 EndChar
 
-StartChar: glyph150
+StartChar: glyph150.alt1
 Encoding: 65726 -1 297
 Width: 2458
 GlyphClass: 2
@@ -18455,7 +18455,7 @@ Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 12 subtable" glyph
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 9 subtable" N underscore
 EndChar
 
-StartChar: glyph151
+StartChar: glyph151.alt1
 Encoding: 65727 -1 298
 Width: 2593
 GlyphClass: 2
@@ -18570,7 +18570,7 @@ Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 12 subtable" glyph
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 9 subtable" N a
 EndChar
 
-StartChar: glyph152
+StartChar: glyph152.alt1
 Encoding: 65728 -1 299
 Width: 1092
 GlyphClass: 2
@@ -18622,7 +18622,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" O Y
 EndChar
 
-StartChar: glyph153
+StartChar: glyph153.alt1
 Encoding: 65729 -1 300
 Width: 1407
 GlyphClass: 2
@@ -18672,7 +18672,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" Q Y
 EndChar
 
-StartChar: glyph154
+StartChar: glyph154.alt1
 Encoding: 65730 -1 301
 Width: 1253
 GlyphClass: 2
@@ -18744,7 +18744,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" R Y
 EndChar
 
-StartChar: glyph155
+StartChar: glyph155.alt1
 Encoding: 65731 -1 302
 Width: 1442
 GlyphClass: 2
@@ -18811,7 +18811,7 @@ Validated: 37
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" S Y
 EndChar
 
-StartChar: glyph156
+StartChar: glyph156.alt1
 Encoding: 65732 -1 303
 Width: 1268
 GlyphClass: 2
@@ -18869,7 +18869,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" T Y
 EndChar
 
-StartChar: glyph157
+StartChar: glyph157.alt1
 Encoding: 65733 -1 304
 Width: 1526
 GlyphClass: 2
@@ -18967,7 +18967,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" U Y
 EndChar
 
-StartChar: glyph158
+StartChar: glyph158.alt1
 Encoding: 65734 -1 305
 Width: 1448
 GlyphClass: 2
@@ -19036,7 +19036,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" V Y
 EndChar
 
-StartChar: glyph159
+StartChar: glyph159.alt1
 Encoding: 65735 -1 306
 Width: 1638
 GlyphClass: 2
@@ -19104,7 +19104,7 @@ Validated: 33
 Ligature2: "'abvs' Above Base Substitutions in Kannada lookup 8 subtable" W Y
 EndChar
 
-StartChar: glyph160
+StartChar: glyph160.alt1
 Encoding: 65736 -1 307
 Width: 1391
 GlyphClass: 2
@@ -19215,7 +19215,7 @@ EndSplineSet
 Validated: 33
 EndChar
 
-StartChar: glyph161
+StartChar: glyph161.alt1
 Encoding: 65737 -1 308
 Width: 1348
 GlyphClass: 2

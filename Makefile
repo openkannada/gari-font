@@ -10,6 +10,7 @@ fedora:
 	rm -rf /tmp/gari-${VERSION}
 	mkdir /tmp/gari-${VERSION}
 	cp ChangeLog OFL.txt Gari.sfd generate.pe README /tmp/gari-${VERSION}/
+	mkdir /tmp/gari-${VERSION}/tools && cp tools/finish.py /tmp/gari-${VERSION}/tools/
 	cp fedora_makefile /tmp/gari-${VERSION}/Makefile
 
 	cd /tmp/; \

@@ -5,7 +5,7 @@ from fontTools.ttLib import TTFont
 
 from kannada import FONT
 
-FAMILY_IDS = (1, 3, 4, 6, 16, 18, 21)
+FAMILY_IDS = (1, 2, 3, 4, 6, 16, 17, 18, 21, 22, 25)
 COPYRIGHT, LICENSE = 0, 13
 
 

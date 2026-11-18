@@ -1,6 +1,5 @@
 Copyright (C) 2026, The Open Kannada Authors.
-Copyright (C) 2011-2012, Aravinda VK <hallimanearavind@gmail.com> (http://aravindavk.in), with Reserved Font Name Navilu.
-Copyright (C) 2005-2010, Indian Institute of Science, Bangalore.
+Copyright (C) 2011-2012, Aravinda VK <hallimanearavind@gmail.com> (http://aravindavk.in); Copyright (C) 2005-2010, Indian Institute of Science, Bangalore; with Reserved Font Name Navilu.
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:

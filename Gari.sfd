@@ -3,7 +3,7 @@ FontName: Gari-Regular
 FullName: Gari Regular
 FamilyName: Gari
 Weight: Regular
-Copyright: Copyright 2026 The Open Kannada Authors (https://github.com/openkannada/gari-font); Copyright 2011-2012 Aravinda VK (http://aravindavk.in), with Reserved Font Name Navilu; Copyright 2005-2010 Indian Institute of Science, Bangalore
+Copyright: Copyright 2026 The Open Kannada Authors (https://github.com/openkannada/gari-font); Copyright 2011-2012 Aravinda VK (http://aravindavk.in); Copyright 2005-2010 Indian Institute of Science, Bangalore; with Reserved Font Name Navilu
 Version: 1.300
 ItalicAngle: 0
 UnderlinePosition: -288
@@ -218,7 +218,7 @@ ShortTable: maxp 16
   0
   0
 EndShort
-LangName: 1033 "Copyright 2026 The Open Kannada Authors (https://github.com/openkannada/gari-font); Copyright 2011-2012 Aravinda VK (http://aravindavk.in), with Reserved Font Name Navilu; Copyright 2005-2010 Indian Institute of Science, Bangalore" "" "" "1.300;NONE;Gari-Regular" "" "" "" "" "The Open Kannada Authors" "Aravinda VK; Indian Institute of Science, Bangalore" "A Kannada handwriting typeface based on Navilu by Aravinda VK, with new-order shaping and the letters added in Unicode 14 to 17." "https://github.com/openkannada" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
+LangName: 1033 "Copyright 2026 The Open Kannada Authors (https://github.com/openkannada/gari-font); Copyright 2011-2012 Aravinda VK (http://aravindavk.in); Copyright 2005-2010 Indian Institute of Science, Bangalore; with Reserved Font Name Navilu" "" "" "1.300;NONE;Gari-Regular" "" "" "" "" "The Open Kannada Authors" "Aravinda VK; Indian Institute of Science, Bangalore" "A Kannada handwriting typeface based on Navilu by Aravinda VK, with new-order shaping and the letters added in Unicode 14 to 17." "https://github.com/openkannada" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
 Encoding: Custom
 Compacted: 1
 UnicodeInterp: none

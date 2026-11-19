@@ -31,6 +31,8 @@ Run the shaping tests against the built font (needs [uv](https://docs.astral.sh/
 
 Set `FONT=path/to/font.ttf` to test another build.
 
+CI also runs [font-health-action](https://github.com/openkannada/font-health-action) on `Gari.ttf`: 2,146 Kannada shaping strings and Shaperglot's `kn_Knda` checks. [font-health/baseline.json](font-health/baseline.json) lists the failures Gari has today (35 clusters with no conjunct, 76 strings with a missing glyph, mostly ೢ and ೣ), so the check fails only on new ones. Shrink the baseline as gaps are fixed.
+
 ## Release
 
     uv sync --group release

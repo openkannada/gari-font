@@ -29,7 +29,9 @@ STRESS = (
     ("Vocalic letters and signs", "ಋ ೠ ಌ ೡ ಕೃ ಕೄ ಕೢ ಕೣ ಪಿತೃ ಕೃಷ್ಣ"),
     ("Old letters", "ೞ ಱ ಕ್ೞ ಳ್ೞ ಕ್ಱ ಪೞಿ ಅೞಲ್"),
     ("Joiners", "ರ\u200d್ಯಾಂಕ್ ರ\u200c್ಯಾಂಕ್ ಕ್ಷ ಕ್\u200cಷ"),
-    ("Nukta, avagraha, visarga", "ಫ಼ ಜ಼ ಽ ಅಃ ದುಃಖ"),
+    ("Nukta, avagraha, visarga", "ಫ಼ ಜ಼ ಽ ಅಃ ದುಃಖ ಸೋಽಹಮ್ ಜ಼ಮೀನು"),
+    ("Candrabindu, siddham, jihvamuliya, upadhmaniya", "಄ ಹಾಀ ಕಁ ದುೱಖ ಅಂತೲಪುರ"),
+    ("Dandas", "ಬಂದನು। ಶುಭಮಸ್ತು॥ ॥೧॥"),
     ("Digits", "೦೧೨೩೪೫೬೭೮೯ ೨೦೨೬"),
 )
 

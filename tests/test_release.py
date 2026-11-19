@@ -63,7 +63,13 @@ def test_specimen_for_a_static_font(tmp_path):
     assert f'url("webfonts/{FONT.stem}.woff2")' in page
     for label in ("U+0CDC", "U+0CDD", "U+0CF3"):
         assert label in page
-    assert "Not in this font: U+0CE2" in page
+    assert "Not in this font" not in page
+
+
+def test_specimen_names_the_characters_a_font_lacks():
+    kept, note = specimen._covered("ಕೢ ಕ ಽ", {ord("ಕ"): "ka"})
+    assert kept == "ಕ"
+    assert note == "Not in this font: U+0CBD ಽ U+0CE2 ೢ"
 
 
 def test_finish_leaves_the_post_table_of_a_cff_font(tmp_path):

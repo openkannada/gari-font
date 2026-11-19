@@ -34,7 +34,3 @@ reason = "period and t are empty, unencoded and unused glyphs inherited from Nav
 codes = ["mismatch-number-of-glyphs-hmtx-cff"]
 files = ["*.otf"]
 reason = "The OTF stores trailing equal advance widths once, as the OpenType hmtx format allows; fontspector compares that count with the glyph count."
-
-[shaperglot]
-missing = ["U+0CBC", "U+0CBD"]
-reason = "KANNADA SIGN NUKTA and KANNADA SIGN AVAGRAHA are not drawn in Gari yet; they need designed glyphs."

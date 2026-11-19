@@ -24,3 +24,13 @@ jobs:
       - run: uv run ruff format --check tests tools/add_knd2.py tools/finish.py tools/release.py tools/check_release.py tools/specimen.py tools/shaperglot_gate.py
       - name: Test the font built from the source
         run: uv run pytest -q
+
+  font-health:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: openkannada/font-health-action@v1
+        with:
+          fonts: Gari.ttf
+          baseline: font-health/baseline.json
+          allow-missing: U+0CBC U+0CBD

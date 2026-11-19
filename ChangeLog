@@ -1,3 +1,26 @@
+2026-11-19 The Open Kannada Authors (unreleased)
+	* Added the 11 Kannada-block signs Gari lacked, drawn in its own
+	stroke: U+0C80 SPACING CANDRABINDU, U+0C81 CANDRABINDU, U+0C84
+	SIDDHAM, U+0CBC NUKTA, U+0CBD AVAGRAHA, U+0CE2 and U+0CE3 VOWEL SIGN
+	VOCALIC L and LL, U+0CF1 JIHVAMULIYA, U+0CF2 UPADHMANIYA, and U+0964
+	DANDA and U+0965 DOUBLE DANDA. Their skeletons are in
+	sources/signs.json, stroked with a round pen 142 units wide (Gari's
+	stem) by tools/add_signs.py. ೢ and ೣ are Gari's own ಌ and ೡ fitted to
+	its subscript ಲ. Candrabindu and nukta are drawn over and under the
+	consonant in their outlines, as Gari's other marks are, since Gari
+	has no mark positioning.
+	* Unicode 15 makes jihvamuliya and upadhmaniya consonants with a
+	stacker: ka or kha after jihvamuliya, and pa or pha after
+	upadhmaniya, are written as subscripts. A new abvs rule (knda and
+	knd2) gives them Gari's own subscript forms there, as Noto Sans
+	Kannada does; it skips vowel signs, which HarfBuzz places between.
+	* Structural references, for each sign's shape, size and position
+	only, with no outlines copied: Noto Sans Kannada 2.006 (The Noto
+	Project Authors) and Tiro Kannada 1.65 (The Indigo Project Authors),
+	both under the SIL Open Font License 1.1.
+	* Shaperglot now reports full kn_Knda support, so the nukta and
+	avagraha exceptions are gone from CI and release/known-fails.toml.
+
 2026-11-18 The Open Kannada Authors (1.300)
 	* Ready for release. PostScript name Gari-Regular and full name Gari
 	Regular, no embedding restriction (fsType 0), vendor ID NONE, and a

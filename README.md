@@ -24,7 +24,7 @@ Build `Gari.ttf` from `Gari.sfd` with FontForge, then finish it with `tools/fini
 
 `make fedora` writes source and binary tarballs to `/tmp`; the source tarball includes `tools/finish.py`.
 
-`sources/signs.json` holds the skeletons of the signs added after 1.300, and `tools/add_signs.py` strokes them with Gari's round pen and adds them to `Gari.sfd` (`fontforge -lang=py -script tools/add_signs.py Gari.sfd`). It refuses a character that already has a glyph, so edit a sign in `Gari.sfd` itself once it is there.
+`sources/signs.json` holds the skeletons of the signs added after 1.300, and `tools/add_signs.py` strokes them with Gari's round pen and adds them to `Gari.sfd` (`fontforge -lang=py -script tools/add_signs.py Gari.sfd`). It also adds the shaping the signs need (its docstring lists it), with `tools/mark_offsets.py` working out where the nukta and candrabindu go and `tools/sfd_splice.py` copying only the additions into the source. It refuses a character that already has a glyph, so edit a sign in `Gari.sfd` itself once it is there.
 
 ## Test
 

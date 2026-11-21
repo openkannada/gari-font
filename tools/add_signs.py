@@ -6,26 +6,31 @@ Run with FontForge's Python: fontforge -lang=py -script tools/add_signs.py Gari.
 
 Each glyph in the JSON has 1 of 2 kinds of drawing:
 
-- strokes: centerline skeletons as cubic segments (Hobby curves through hand-placed points),
-  stroked with a round pen of the stem's width, with round caps and joins; a dot is a filled
-  circle;
+- strokes: centerline skeletons as cubic segments, stroked with a round pen of the stem's
+  width, with round caps and joins; a dot is a filled circle. The cubics were drawn as Hobby
+  curves through hand-placed points; edit the cubics, or redraw a sign and replace its entry;
 - contours: finished TrueType outlines (on-curve flag per point). The vocalic L signs are
   Gari's own ಌ and ೡ fitted to its subscript ಲ by `fontqa fix --compose-l` (openkannada/kannadi).
 
-A glyph with an advance keeps it (marks are drawn left of their origin, over the base, since
-Gari positions marks in their outlines); otherwise the advance is lsb + ink + rsb.
+A glyph with an advance keeps it (marks are drawn left of their origin, over the base, as Gari
+draws its marks); otherwise the advance is lsb + ink + rsb.
 
-Unicode 15 makes jihvamuliya and upadhmaniya consonants with a stacker: the consonant after
-them (ka or kha after jihvamuliya, pa or pha after upadhmaniya) is written as a subscript. An
-abvs rule, for knda and knd2, gives those consonants Gari's own subscript forms there.
+Shaping that comes with the signs:
 
-FontForge rewrites some existing glyphs when it saves a font, so only what this script adds is
-copied from its output into the source: the lookups, the new glyphs and the consonants' new
-substitution lines. Every other line of the source is kept as it is.
+- Unicode 15 makes jihvamuliya and upadhmaniya consonants with a stacker: the consonant after
+  them (ka or kha, pa or pha) is written as a subscript. An abvs rule gives it Gari's own
+  subscript form there.
+- Gari's substitution rules skip the nukta, so a consonant with a nukta takes the same vowel
+  sign and conjunct forms as without it.
+- The candrabindu moves back past the vowel signs before it, to right after the consonant.
+- Pair positioning (tools/mark_offsets.py) moves the nukta under the consonant's body and below
+  descenders, pushes a subscript below a nukta, and moves the candrabindu over the consonant and
+  above the vowel sign after it.
+
+Only what this script adds goes into the source (tools/sfd_splice.py).
 """
 
 import json
-import re
 import sys
 import tempfile
 from pathlib import Path
@@ -33,12 +38,26 @@ from pathlib import Path
 import fontforge
 import psMat
 
+sys.path.insert(0, str(Path(__file__).parent))
+import mark_offsets  # noqa: E402
+from sfd_splice import chain_contexts, splice  # noqa: E402
+
 KAPPA = 0.5523
 CLASSES = {"base": "baseglyph", "mark": "mark"}
-VIRAMA = 0x0CCD
+VIRAMA, NUKTA, CANDRABINDU = 0x0CCD, 0x0CBC, 0x0C81
+CONSONANTS = {*range(0x0C95, 0x0CBA), 0x0CDE}
+VOWEL_SIGNS = {*range(0x0CBE, 0x0CCD), 0x0CD5, 0x0CD6}
 STACKERS = {0x0CF1: (0x0C95, 0x0C96), 0x0CF2: (0x0CAA, 0x0CAB)}
+SCRIPTS = (("knda", ("dflt",)), ("knd2", ("dflt",)))
 STACK_SINGLE = "Subscript after a stacker"
 STACK_RULE = "'abvs' Subscript after jihvamuliya or upadhmaniya"
+NUKTA_PLACE = "'blwm' Nukta under the consonant"
+SUBSCRIPT_DROP = "'blwm' Subscript below the nukta"
+NUKTA_DROP = "'blwm' Nukta below the vowel sign"
+CANDRABINDU_PLACE = "'abvm' Candrabindu over the consonant"
+CANDRABINDU_RISE = "'abvm' Candrabindu above the vowel sign"
+CANDRABINDU_BACK = "Candrabindu after the consonant"
+OTHER_MARKS = "Marks other than the nukta"
 
 
 def draw_segments(pen, stroke):
@@ -72,6 +91,10 @@ def toward(a, b, t):
 def draw_contours(pen, contours):
     """TrueType contours (x, y, on-curve flag), each quadratic segment raised to a cubic."""
     for points in contours:
+        points = [tuple(p) for p in points]
+        if not any(on for *_, on in points):
+            # A contour of off-curve points only starts at the midpoint of its last and first.
+            points.insert(0, (*toward(points[-1], points[0], 0.5), 1))
         start = next(i for i, p in enumerate(points) if p[2])
         points = points[start:] + points[: start + 1]
         here = tuple(points[0][:2])
@@ -83,7 +106,6 @@ def draw_contours(pen, contours):
                 continue
             if not offs:
                 pen.lineTo((x, y))
-            # Between 2 off-curve points lies an implied on-curve point at their midpoint.
             ends = [toward(a, b, 0.5) for a, b in zip(offs, offs[1:], strict=False)]
             for control, end in zip(offs, [*ends, (x, y)], strict=bool(offs)):
                 pen.curveTo(toward(here, control, 2 / 3), toward(end, control, 2 / 3), end)
@@ -98,8 +120,9 @@ def draw_strokes(work, strokes, stem):
         if "segments" in stroke:
             draw_segments(pen, stroke)
     pen = None
-    work.stroke("circular", stem, cap="round", join="round")
-    work.removeOverlap()
+    if len(work.foreground):
+        work.stroke("circular", stem, cap="round", join="round")
+        work.removeOverlap()
     pen = work.glyphPen(replace=False)
     for stroke in strokes:
         if stroke.get("dot"):
@@ -127,8 +150,9 @@ def outline(glyph, spec, stem):
     scratch.close()
 
 
-def drop_coincident_points(glyph, within=2):
-    """Remove points that rounding left within a unit or 2 of the next, keeping on-curve ones."""
+def drop_close_points(glyph, within=2):
+    """Remove points that rounding left within `within` units of the next on both axes,
+    keeping on-curve points over off-curve ones."""
     layer = fontforge.layer()
     layer.is_quadratic = True
     for contour in glyph.foreground:
@@ -136,7 +160,7 @@ def drop_coincident_points(glyph, within=2):
         keep = []
         for i, p in enumerate(points):
             q = points[(i + 1) % len(points)]
-            near = abs(p.x - q.x) + abs(p.y - q.y) < within
+            near = max(abs(p.x - q.x), abs(p.y - q.y)) <= within
             if near and (not p.on_curve or q.on_curve):
                 continue
             keep.append(p)
@@ -151,13 +175,14 @@ def drop_coincident_points(glyph, within=2):
 
 def add(font, name, spec, stem):
     current = next((g for g in font.glyphs() if g.unicode == spec["unicode"]), None)
-    if current is not None and len(current.foreground):
-        sys.exit(f"U+{spec['unicode']:04X} already has a glyph with ink, {current.glyphname}")
+    if current is not None:
+        sys.exit(f"U+{spec['unicode']:04X} already has a glyph, {current.glyphname}")
+    if name in font:
+        sys.exit(f"the source already has a glyph named {name}")
     glyph = font.createChar(spec["unicode"], name)
-    glyph.clear()
     outline(glyph, spec, stem)
     glyph.round()
-    drop_coincident_points(glyph)
+    drop_close_points(glyph)
     glyph.correctDirection()
     if "advance" in spec:
         glyph.width = spec["advance"]
@@ -166,6 +191,30 @@ def add(font, name, spec, stem):
         glyph.transform(psMat.translate(spec["lsb"] - xmin, 0))
         glyph.width = round(spec["lsb"] + (xmax - xmin) + spec["rsb"])
     glyph.glyphclass = CLASSES[spec["class"]]
+
+
+def lookup_sources(font):
+    """Glyph name to the glyph it is made from by a single substitution or, for a ligature,
+    its first component."""
+    source = {}
+    for glyph in font.glyphs():
+        for _, kind, *parts in glyph.getPosSub("*"):
+            if kind == "Substitution":
+                source.setdefault(parts[0], glyph.glyphname)
+            elif kind == "Ligature":
+                source.setdefault(glyph.glyphname, parts[0])
+    return source
+
+
+def made_from(name, source, wanted, depth=6):
+    """The glyph in `wanted` that `name` is made from, or None."""
+    for _ in range(depth):
+        if name in wanted:
+            return name
+        if name not in source:
+            return None
+        name = source[name]
+    return None
 
 
 def subscripts(font):
@@ -185,59 +234,172 @@ def subscripts(font):
 
 
 def add_stacked_subscripts(font):
-    """The consonant after a stacker takes its subscript form. Returns the glyphs it changes."""
+    """The consonant after a stacker takes its subscript form. Returns the subtables added."""
     names = {g.unicode: g.glyphname for g in font.glyphs() if g.unicode != -1}
     below = subscripts(font)
-    scripts = (("knda", ("dflt",)), ("knd2", ("dflt",)))
     first = font.gsub_lookups[0]
     font.addLookup(STACK_SINGLE, "gsub_single", (), (), first)
     font.addLookupSubtable(STACK_SINGLE, f"{STACK_SINGLE} subtable")
     font.addLookup(
-        STACK_RULE, "gsub_contextchain", ("ignore_marks",), (("abvs", scripts),), STACK_SINGLE
+        STACK_RULE, "gsub_contextchain", ("ignore_marks",), (("abvs", SCRIPTS),), STACK_SINGLE
     )
-    touched = []
+    tables = {f"{STACK_SINGLE} subtable"}
     for stacker, consonants in STACKERS.items():
         followers = [names[c] for c in consonants]
         for name in followers:
             font[name].addPosSub(f"{STACK_SINGLE} subtable", below[name])
-            touched.append(name)
+        table = f"{STACK_RULE} {stacker:04X}"
         font.addContextualSubtable(
             STACK_RULE,
-            f"{STACK_RULE} {stacker:04X}",
+            table,
             "coverage",
             f"[{names[stacker]}] | [{' '.join(followers)}] @<{STACK_SINGLE}> |",
         )
-    return touched
+        tables.add(table)
+    return tables
 
 
-def records(sfd_text):
-    """Glyph name to its StartChar ... EndChar record."""
-    return {
-        m.group(1): m.group(0)
-        for m in re.finditer(r"^StartChar: (\S+)\n.*?^EndChar\n", sfd_text, re.M | re.S)
-    }
+def candrabindu_after_consonant(font, passes=3):
+    """Move the candrabindu back past up to `passes` marks. Each pass joins a mark and the
+    candrabindu into a temporary glyph, then splits it into the candrabindu and the mark.
+    Returns the temporary glyphs and the subtables added."""
+    cb = next(g.glyphname for g in font.glyphs() if g.unicode == CANDRABINDU)
+    marks = [
+        g.glyphname
+        for g in font.glyphs()
+        if g.glyphclass == "mark" and g.unicode not in (CANDRABINDU, NUKTA)
+    ]
+    temporary = {}
+    for mark in marks:
+        glyph = font.createChar(-1, f"{mark}_{cb}.reorder")
+        glyph.width = 0
+        temporary[mark] = glyph.glyphname
+    after, tables = font.gsub_lookups[-1], set()
+    for n in range(1, passes + 1):
+        join, split = f"{CANDRABINDU_BACK} join {n}", f"{CANDRABINDU_BACK} split {n}"
+        font.addLookup(join, "gsub_ligature", (), (("psts", SCRIPTS),), after)
+        font.addLookupSubtable(join, f"{join} subtable")
+        font.addLookup(split, "gsub_multiple", (), (("psts", SCRIPTS),), join)
+        font.addLookupSubtable(split, f"{split} subtable")
+        for mark, temp in temporary.items():
+            font[temp].addPosSub(f"{join} subtable", (mark, cb))
+            font[temp].addPosSub(f"{split} subtable", (cb, mark))
+        tables |= {f"{join} subtable", f"{split} subtable"}
+        after = split
+    return list(temporary.values()), tables
 
 
-def header(sfd_text):
-    return sfd_text[: sfd_text.index("\nBeginChars: ") + 1]
+def skip_nukta(font):
+    """Every substitution rule that sees marks sees all of them except the nukta."""
+    nukta = next(g.glyphname for g in font.glyphs() if g.unicode == NUKTA)
+    others = tuple(
+        g.glyphname for g in font.glyphs() if g.glyphclass == "mark" and g.glyphname != nukta
+    )
+    font.markClasses = (*font.markClasses, (OTHER_MARKS, others))
+    for lookup in font.gsub_lookups:
+        if font.getLookupInfo(lookup)[1] == ():
+            font.lookupSetFlags(lookup, (OTHER_MARKS,))
 
 
-def splice(original, saved, added, touched):
-    """The original source with the saved one's header, its records of the added glyphs, and
-    the substitution lines it gave the touched glyphs."""
-    old, new = records(original), records(saved)
-    keep = re.search(r"^ModificationTime: .*$", original, re.M).group(0)
-    head = re.sub(r"^ModificationTime: .*$", keep, header(saved), count=1, flags=re.M)
-    body = original[len(header(original)) :]
-    for name in touched:
-        lines = [ln for ln in new[name].splitlines(True) if ln.startswith("Substitution2: ")]
-        extra = "".join(ln for ln in lines if ln not in old[name])
-        record = old[name].removesuffix("EndChar\n") + extra + "EndChar\n"
-        body = body.replace(old[name], record, 1)
-    count = re.search(r"^BeginChars: .*$", saved, re.M).group(0)
-    body = re.sub(r"^BeginChars: .*$", count, body, count=1, flags=re.M)
-    glyphs = "\n".join(new[name] for name in added)
-    return head + body.replace("\nEndChars\n", f"\n\n{glyphs}EndChars\n", 1)
+def contour_points(glyph):
+    return [mark_offsets.sample([(p.x, p.y, p.on_curve) for p in c]) for c in glyph.foreground]
+
+
+def points(glyph):
+    return [p for contour in contour_points(glyph) for p in contour]
+
+
+def context_before(font, sfd_text):
+    """Glyph name to the glyphs that come just before it, for glyphs that a contextual rule
+    substitutes."""
+    out = {}
+    for lookup, _, before in chain_contexts(sfd_text):
+        if lookup not in font.gsub_lookups or font.getLookupInfo(lookup)[0] != "gsub_single":
+            continue
+        tables = set(font.getLookupSubtables(lookup))
+        for glyph in font.glyphs():
+            for table, kind, *parts in glyph.getPosSub("*"):
+                if table in tables and kind == "Substitution":
+                    out.setdefault(parts[0], set()).update(before)
+    return out
+
+
+def add_mark_positions(font, sfd_text):
+    """Pair positioning for the nukta and the candrabindu. Returns the subtables added."""
+    by_code = {g.unicode: g for g in font.glyphs() if g.unicode != -1}
+    nukta, candrabindu = by_code[NUKTA], by_code[CANDRABINDU]
+    dots = mark_offsets.circles(contour_points(nukta))
+    cb_box = mark_offsets.box(points(candrabindu))
+    source = lookup_sources(font)
+    consonants = {by_code[c].glyphname for c in CONSONANTS if c in by_code}
+    signs = {by_code[c].glyphname for c in VOWEL_SIGNS if c in by_code}
+    below = set(subscripts(font).values())
+    below |= {n for n in source if made_from(n, source, below)}
+    ink = {g.glyphname: points(g) for g in font.glyphs()}
+
+    tables = {}
+    for name, feature, flags in (
+        (NUKTA_PLACE, "blwm", ()),
+        (SUBSCRIPT_DROP, "blwm", ()),
+        (NUKTA_DROP, "blwm", ()),
+        (CANDRABINDU_PLACE, "abvm", (OTHER_MARKS,)),
+        (CANDRABINDU_RISE, "abvm", ()),
+    ):
+        font.addLookup(name, "gpos_pair", flags, ((feature, SCRIPTS),))
+        tables[name] = f"{name} subtable"
+        font.addLookupSubtable(name, tables[name])
+
+    x0, y0, x1, y1 = mark_offsets.box(points(nukta))
+    reach = [x0, y0, x1, y1]
+    marks = (nukta.glyphname, candrabindu.glyphname)
+    places, placed = [(0, 0)], {}
+    before = context_before(font, sfd_text)
+    for glyph in font.glyphs():
+        name = glyph.glyphname
+        made = made_from(name, source, consonants)
+        if name in marks or name in below or made is None or not ink[name]:
+            continue
+        dx, dy = mark_offsets.nukta(ink[name], glyph.width, ink[made], dots)
+        placed[name] = (dx, dy, [(x - glyph.width, y) for x, y in ink[name]])
+        if dx or dy:
+            glyph.addPosSub(tables[NUKTA_PLACE], nukta.glyphname, 0, 0, 0, 0, dx, dy, 0, 0)
+        if name in consonants:
+            # A subscript or vowel sign glyph follows a nukta on the bare consonant only.
+            reach = [min(reach[0], x0 + dx), min(reach[1], y0 + dy), max(reach[2], x1 + dx), y1]
+            places.append((dx, dy))
+    for glyph in font.glyphs():
+        name = glyph.glyphname
+        if name in marks or not ink[name]:
+            continue
+        if name in below:
+            dy = mark_offsets.below_nukta(ink[name], tuple(reach))
+            if dy:
+                nukta.addPosSub(tables[SUBSCRIPT_DROP], name, 0, 0, 0, 0, 0, dy, 0, 0)
+        elif made_from(name, source, signs):
+            cases = [placed[p] for p in sorted(before.get(name, ())) if p in placed]
+            if cases:
+                dx, dy = mark_offsets.after_consonants(ink[name], dots, cases)
+            else:
+                dx, dy = 0, mark_offsets.under_sign(ink[name], dots, places)
+            if dx or dy:
+                nukta.addPosSub(tables[NUKTA_DROP], name, dx, dy, 0, 0, 0, 0, 0, 0)
+
+    for glyph in font.glyphs():
+        name = glyph.glyphname
+        made = made_from(name, source, consonants)
+        if name in marks or not ink[name]:
+            continue
+        if glyph.glyphclass == "mark":
+            dy = mark_offsets.above_sign(ink[name], cb_box)
+            if dy:
+                candrabindu.addPosSub(tables[CANDRABINDU_RISE], name, 0, dy, 0, 0, 0, 0, 0, 0)
+            continue
+        dx, dy = mark_offsets.candrabindu(ink[name], glyph.width, ink[made or name], cb_box)
+        if dx or dy:
+            glyph.addPosSub(
+                tables[CANDRABINDU_PLACE], candrabindu.glyphname, 0, 0, 0, 0, dx, dy, 0, 0
+            )
+    return set(tables.values())
 
 
 def main(path, source):
@@ -245,11 +407,15 @@ def main(path, source):
     font = fontforge.open(path)
     for name, spec in data["glyphs"].items():
         add(font, name, spec, data["stem"])
-    touched = add_stacked_subscripts(font)
+    tables = add_stacked_subscripts(font)
+    temporary, reorder = candrabindu_after_consonant(font)
+    skip_nukta(font)
+    tables |= reorder | add_mark_positions(font, Path(path).read_text())
+    added = [*data["glyphs"], *temporary]
     with tempfile.TemporaryDirectory() as tmp:
         saved = Path(tmp) / "out.sfd"
         font.save(str(saved))
-        merged = splice(Path(path).read_text(), saved.read_text(), list(data["glyphs"]), touched)
+        merged = splice(Path(path).read_text(), saved.read_text(), added, tables)
     Path(path).write_text(merged)
 
 

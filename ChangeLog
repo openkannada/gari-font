@@ -6,9 +6,22 @@
 	DANDA and U+0965 DOUBLE DANDA. Their skeletons are in
 	sources/signs.json, stroked with a round pen 142 units wide (Gari's
 	stem) by tools/add_signs.py. ೢ and ೣ are Gari's own ಌ and ೡ fitted to
-	its subscript ಲ. Candrabindu and nukta are drawn over and under the
-	consonant in their outlines, as Gari's other marks are, since Gari
-	has no mark positioning.
+	its subscript ಲ. The nukta is 2 dots side by side, as Kannada
+	writes it.
+	* Gari's substitution rules skip the nukta (a mark attachment class
+	of every mark but the nukta), so a consonant with a nukta takes the
+	same vowel sign and conjunct forms as without it: ಫ಼ಿ uses ಫಿ's form.
+	Shaping of text without the new signs is unchanged.
+	* The candrabindu moves back past the vowel signs before it, to right
+	after the consonant (3 join and split passes in psts).
+	* Gari's first positioning lookups, for the 2 new marks only, worked
+	out from the outlines by tools/mark_offsets.py: the nukta goes under
+	the consonant's body and slides aside from tails such as ಫ's, or
+	drops below them; a subscript after a nukta, and the nukta under the
+	hooked ು and ೂ of ಪ, ಫ and ವ, move to clear each other; the
+	candrabindu goes over the consonant and rises above ಿ and ೌ, never
+	past the ascent. No nukta or candrabindu overlaps other ink with any
+	consonant, vowel sign or ್ರ ್ಲ ್ವ ್ಯ.
 	* Unicode 15 makes jihvamuliya and upadhmaniya consonants with a
 	stacker: ka or kha after jihvamuliya, and pa or pha after
 	upadhmaniya, are written as subscripts. A new abvs rule (knda and

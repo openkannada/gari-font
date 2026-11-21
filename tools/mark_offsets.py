@@ -36,7 +36,7 @@ def sample(points: list[tuple[float, float, bool]], steps: int = 6) -> list[Poin
         ends = [
             ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2) for a, b in zip(offs, offs[1:], strict=False)
         ]
-        for control, end in zip(offs, [*ends, (x, y)], strict=True):
+        for control, end in zip(offs, [*ends, (x, y)], strict=bool(offs)):
             for k in range(1, steps + 1):
                 t = k / steps
                 out.append(
@@ -178,3 +178,55 @@ def above_sign(sign: list[Point], mark: Box) -> int:
     peak = highest(sign, x0 - reach, x1 + reach)
     rise = max(0.0, peak + GAP - bottom) if peak is not None else 0.0
     return round(min(rise, CEILING - top))
+
+
+def _distance_ok(moving: list[Point], fixed: list[Point], dx: float, dy: float) -> bool:
+    reach = GAP * GAP
+    for mx, my in moving:
+        x, y = mx + dx, my + dy
+        if any((fx - x) ** 2 + (fy - y) ** 2 < reach for fx, fy in fixed):
+            return False
+    return True
+
+
+def _near(points: list[Point], other: list[Point], margin: float) -> list[Point]:
+    """The points of `points` within `margin` of the other set's box."""
+    if not points or not other:
+        return []
+    x0, y0, x1, y1 = box(other)
+    return [
+        (x, y)
+        for x, y in points
+        if x0 - margin <= x <= x1 + margin and y0 - margin <= y <= y1 + margin
+    ]
+
+
+def drop_clear(moving: list[Point], fixed: list[Point], limit: int = 900, step: int = 10) -> int:
+    """How far `moving` drops (0 or negative) to stay GAP clear of `fixed`."""
+    for d in range(0, limit + 1, step):
+        a = _near(moving, fixed, GAP + d)
+        b = _near(fixed, [(x, y - d) for x, y in moving], GAP)
+        if _distance_ok(a, b, 0, -d):
+            return -d
+    return -limit
+
+
+def slide_clear(moving: list[Point], fixed: list[Point], limit: int = 900, step: int = 10) -> int:
+    """How far `moving` slides right (0 or positive) to stay GAP clear of `fixed`."""
+    for d in range(0, limit + 1, step):
+        a = _near(moving, fixed, GAP + d)
+        b = _near(fixed, [(x + d, y) for x, y in moving], GAP)
+        if _distance_ok(a, b, d, 0):
+            return d
+    return limit
+
+
+def subscript_drop(subscript: list[Point], dots: list[Circle], place: tuple[int, int]) -> int:
+    """How far a subscript after the nukta drops (0 or negative) to clear the nukta where it
+    sits under this consonant."""
+    dx, dy = place
+    near = [(x, y) for x, y in subscript if y > -1200]
+    for d in range(0, 901, 10):
+        if clear(dots, [(x, y - d) for x, y in near], dx, dy):
+            return -d
+    return -900

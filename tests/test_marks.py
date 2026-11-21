@@ -98,3 +98,57 @@ def test_candrabindu_follows_the_consonant_glyph(font, shaper, sign):
     order = font.getGlyphOrder()
     names = [order[g] for g in shaper.glyphs("ಕ" + sign + CANDRABINDU)]
     assert names.index(font.getBestCmap()[ord(CANDRABINDU)]) == 1
+
+
+CLEAR = 60  # ink-free space kept around a moved mark or sign
+
+
+def grown(path: pathops.Path, by: float) -> pathops.Path:
+    out = pathops.Path(path)
+    out.stroke(2 * by, pathops.LineCap.ROUND_CAP, pathops.LineJoin.ROUND_JOIN, 4)
+    out.convertConicsToQuads()
+    return pathops.op(out, path, pathops.PathOp.UNION)
+
+
+@pytest.mark.parametrize("consonant", CONSONANTS)
+def test_subscript_drops_only_as_far_as_the_nukta_needs(font, shaper, consonant):
+    nukta = font.getBestCmap()[ord(NUKTA)]
+    too_far = []
+    for sub in SUBSCRIPTS:
+        shaped = inked(font, shaper, consonant + NUKTA + sub)
+        dropped = {n: p for n, p in shaped}
+        plain = dict(inked(font, shaper, consonant + sub))
+        name = shaped[-1][0]
+        if nukta not in dropped or name not in plain or name == nukta:
+            continue
+        moved = plain[name].bounds[1] - dropped[name].bounds[1]
+        if moved <= 0:
+            continue
+        gap = dropped[nukta].bounds[1] - dropped[name].bounds[3]
+        # Dropped any less, the subscript would come within the gap of the nukta.
+        if (
+            area(
+                pathops.op(
+                    grown(dropped[nukta], 70 + 20), shaped[-1][1], pathops.PathOp.INTERSECTION
+                )
+            )
+            < TOUCH
+            and gap > 70 + 20
+        ):
+            too_far.append(f"{consonant + NUKTA + sub}: {moved}")
+    assert too_far == []
+
+
+STACKED = [("ೱ", "ಕ"), ("ೱ", "ಖ"), ("ೲ", "ಪ"), ("ೲ", "ಫ")]
+
+
+@pytest.mark.parametrize(("stacker", "consonant"), STACKED)
+def test_signs_after_a_stacker_keep_clear_of_it(font, shaper, stacker, consonant):
+    crowded = []
+    for sign in SIGNS:
+        shaped = inked(font, shaper, stacker + consonant + sign)
+        halo = grown(shaped[0][1], CLEAR)
+        for name, path in shaped[1:]:
+            if area(pathops.op(halo, path, pathops.PathOp.INTERSECTION)) > TOUCH:
+                crowded.append(f"{stacker + consonant + sign}: {name}")
+    assert crowded == []

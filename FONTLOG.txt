@@ -18,7 +18,7 @@ ChangeLog
 ---------
 
 Unreleased
-- The 11 Kannada-block signs Gari lacked, drawn in its own stroke: spacing candrabindu (U+0C80), candrabindu (U+0C81), siddham (U+0C84), nukta (U+0CBC), avagraha (U+0CBD), the vocalic L and LL signs (U+0CE2, U+0CE3), jihvamuliya (U+0CF1), upadhmaniya (U+0CF2), danda (U+0964) and double danda (U+0965). Noto Sans Kannada and Tiro Kannada were the references for each sign's structure, size and position; no outlines were copied. After jihvamuliya and upadhmaniya, the consonant that follows takes its subscript form, as Unicode 15 describes. A consonant with a nukta keeps its vowel sign and conjunct forms, and the nukta and candrabindu are positioned clear of the letters around them. They are drafts that a Kannada reader has yet to approve.
+- The 11 Kannada-block signs Gari lacked, drawn in its own stroke: spacing candrabindu (U+0C80), candrabindu (U+0C81), siddham (U+0C84), nukta (U+0CBC), avagraha (U+0CBD), the vocalic L and LL signs (U+0CE2, U+0CE3), jihvamuliya (U+0CF1), upadhmaniya (U+0CF2), danda (U+0964) and double danda (U+0965). Noto Sans Kannada and Tiro Kannada were the references for each sign's structure, size and position; no outlines were copied. After jihvamuliya and upadhmaniya, the consonant that follows takes its subscript form, as Unicode 15 describes. A consonant with a nukta keeps its vowel sign and conjunct forms, the nukta and candrabindu are positioned clear of the letters around them, and the siddham stays open at 12 px. They are drafts that a Kannada reader has yet to approve.
 
 2026-11-18 (version 1.300)
 - Renamed from Navilu to Gari.

@@ -7,7 +7,9 @@
 	sources/signs.json, stroked with a round pen 142 units wide (Gari's
 	stem) by tools/add_signs.py. ೢ and ೣ are Gari's own ಌ and ೡ fitted to
 	its subscript ಲ. The nukta is 2 dots side by side, as Kannada
-	writes it.
+	writes it. The siddham's spiral hooks into its center rather than
+	curling a full turn inside, so its white channel stays 1 open counter
+	at 12 and 16 px at every pixel phase (FreeType, unhinted).
 	* Gari's substitution rules skip the nukta (a mark attachment class
 	of every mark but the nukta), so a consonant with a nukta takes the
 	same vowel sign and conjunct forms as without it: ಫ಼ಿ uses ಫಿ's form.
@@ -17,8 +19,10 @@
 	* Gari's first positioning lookups, for the 2 new marks only, worked
 	out from the outlines by tools/mark_offsets.py: the nukta goes under
 	the consonant's body and slides aside from tails such as ಫ's, or
-	drops below them; a subscript after a nukta, and the nukta under the
-	hooked ು and ೂ of ಪ, ಫ and ವ, move to clear each other; the
+	drops below them; a subscript after a nukta drops only as far as the
+	nukta under that consonant needs (a contextual rule per group of
+	consonants); the nukta under the hooked ು and ೂ of ಪ, ಫ and ವ
+	moves to clear them; the
 	candrabindu goes over the consonant and rises above ಿ and ೌ, never
 	past the ascent. No nukta or candrabindu overlaps other ink with any
 	consonant, vowel sign or ್ರ ್ಲ ್ವ ್ಯ.
@@ -27,6 +31,10 @@
 	upadhmaniya, are written as subscripts. A new abvs rule (knda and
 	knd2) gives them Gari's own subscript forms there, as Noto Sans
 	Kannada does; it skips vowel signs, which HarfBuzz places between.
+	Contextual positioning then drops the subscript clear of the sign
+	and moves a vowel sign that crowds it to the right, with the
+	subscript moved back by as much, so everything after jihvamuliya and
+	upadhmaniya keeps at least 60 units clear of it.
 	* Structural references, for each sign's shape, size and position
 	only, with no outlines copied: Noto Sans Kannada 2.006 (The Noto
 	Project Authors) and Tiro Kannada 1.65 (The Indigo Project Authors),

@@ -53,6 +53,12 @@ STACK_SINGLE = "Subscript after a stacker"
 STACK_RULE = "'abvs' Subscript after jihvamuliya or upadhmaniya"
 NUKTA_PLACE = "'blwm' Nukta under the consonant"
 SUBSCRIPT_DROP = "'blwm' Subscript below the nukta"
+SUBSCRIPT_DROP_BY = "Subscript below the nukta"
+STACK_DROP = "'blwm' Subscript below jihvamuliya or upadhmaniya"
+STACK_DROP_BY = "Subscript below a stacker"
+STACK_KERN = "'dist' Vowel sign clear of jihvamuliya or upadhmaniya"
+STACK_KERN_BY = "Vowel sign clear of a stacker"
+STACK_BACK_BY = "Subscript back under a stacker"
 NUKTA_DROP = "'blwm' Nukta below the vowel sign"
 CANDRABINDU_PLACE = "'abvm' Candrabindu over the consonant"
 CANDRABINDU_RISE = "'abvm' Candrabindu above the vowel sign"
@@ -259,6 +265,28 @@ def add_stacked_subscripts(font):
     return tables
 
 
+def vowel_sign_glyphs(font):
+    """The glyphs of the vowel signs, and the glyphs a vowel sign splits into."""
+    out = {g.glyphname for g in font.glyphs() if g.unicode in VOWEL_SIGNS}
+    for glyph in font.glyphs():
+        if glyph.glyphname in out:
+            for _, kind, *parts in glyph.getPosSub("*"):
+                if kind == "MultSubs":
+                    out.update(parts)
+    return sorted(out)
+
+
+def stacked_subscripts(font):
+    """Stacker glyph name to the subscripts that follow it."""
+    names = {g.unicode: g.glyphname for g in font.glyphs() if g.unicode != -1}
+    below = subscripts(font)
+    return {
+        sub: names[stacker]
+        for stacker, consonants in STACKERS.items()
+        for sub in (below[names[c]] for c in consonants)
+    }
+
+
 def candrabindu_after_consonant(font, passes=3):
     """Move the candrabindu back past up to `passes` marks. Each pass joins a mark and the
     candrabindu into a temporary glyph, then splits it into the candrabindu and the mark.
@@ -340,7 +368,6 @@ def add_mark_positions(font, sfd_text):
     tables = {}
     for name, feature, flags in (
         (NUKTA_PLACE, "blwm", ()),
-        (SUBSCRIPT_DROP, "blwm", ()),
         (NUKTA_DROP, "blwm", ()),
         (CANDRABINDU_PLACE, "abvm", (OTHER_MARKS,)),
         (CANDRABINDU_RISE, "abvm", ()),
@@ -349,8 +376,6 @@ def add_mark_positions(font, sfd_text):
         tables[name] = f"{name} subtable"
         font.addLookupSubtable(name, tables[name])
 
-    x0, y0, x1, y1 = mark_offsets.box(points(nukta))
-    reach = [x0, y0, x1, y1]
     marks = (nukta.glyphname, candrabindu.glyphname)
     places, placed = [(0, 0)], {}
     before = context_before(font, sfd_text)
@@ -365,17 +390,13 @@ def add_mark_positions(font, sfd_text):
             glyph.addPosSub(tables[NUKTA_PLACE], nukta.glyphname, 0, 0, 0, 0, dx, dy, 0, 0)
         if name in consonants:
             # A subscript or vowel sign glyph follows a nukta on the bare consonant only.
-            reach = [min(reach[0], x0 + dx), min(reach[1], y0 + dy), max(reach[2], x1 + dx), y1]
             places.append((dx, dy))
+    extra = add_subscript_drops(font, nukta, dots, placed, consonants, below, ink)
     for glyph in font.glyphs():
         name = glyph.glyphname
-        if name in marks or not ink[name]:
+        if name in marks or not ink[name] or name in below:
             continue
-        if name in below:
-            dy = mark_offsets.below_nukta(ink[name], tuple(reach))
-            if dy:
-                nukta.addPosSub(tables[SUBSCRIPT_DROP], name, 0, 0, 0, 0, 0, dy, 0, 0)
-        elif made_from(name, source, signs):
+        if made_from(name, source, signs):
             cases = [placed[p] for p in sorted(before.get(name, ())) if p in placed]
             if cases:
                 dx, dy = mark_offsets.after_consonants(ink[name], dots, cases)
@@ -399,7 +420,114 @@ def add_mark_positions(font, sfd_text):
             glyph.addPosSub(
                 tables[CANDRABINDU_PLACE], candrabindu.glyphname, 0, 0, 0, 0, dx, dy, 0, 0
             )
-    return set(tables.values())
+    extra |= add_stacker_positions(font, ink)
+    return set(tables.values()) | extra
+
+
+def add_subscript_drops(font, nukta, dots, placed, consonants, below, ink):
+    """A subscript after a nukta drops just below it, by how far depends on where the nukta sits
+    under that consonant: a contextual rule per group of consonants that need the same drops.
+    Returns the subtables added."""
+    groups = {}
+    for name in sorted(consonants):
+        if name not in placed:
+            continue
+        dx, dy, _ = placed[name]
+        drops = tuple(
+            (sub, d)
+            for sub in sorted(below)
+            if ink.get(sub) and (d := mark_offsets.subscript_drop(ink[sub], dots, (dx, dy)))
+        )
+        if drops:
+            groups.setdefault(drops, []).append(name)
+    font.addLookup(SUBSCRIPT_DROP, "gpos_contextchain", (), (("blwm", SCRIPTS),))
+    tables = set()
+    for k, (drops, names) in enumerate(groups.items(), 1):
+        single = f"{SUBSCRIPT_DROP_BY} {k}"
+        font.addLookup(single, "gpos_single", (), (), SUBSCRIPT_DROP)
+        font.addLookupSubtable(single, f"{single} subtable")
+        for sub, d in drops:
+            font[sub].addPosSub(f"{single} subtable", 0, d, 0, 0)
+        rule = f"{SUBSCRIPT_DROP} {k}"
+        subs = " ".join(sub for sub, _ in drops)
+        font.addContextualSubtable(
+            SUBSCRIPT_DROP,
+            rule,
+            "coverage",
+            f"[{' '.join(names)}] | [{nukta.glyphname}] [{subs}] @<{single}> |",
+        )
+        tables |= {f"{single} subtable", rule}
+    return tables
+
+
+def add_stacker_positions(font, ink):
+    """After jihvamuliya and upadhmaniya, HarfBuzz gives the sign, then any vowel signs, then the
+    subscript, as after a consonant. The subscript drops clear of the sign; a vowel sign that
+    crowds the sign moves right, and the subscript after it moves back by as much, to stay
+    under the sign. Returns the subtables added."""
+    stacked = stacked_subscripts(font)
+    stackers = sorted(set(stacked.values()))
+    subs = sorted(stacked)
+    signs = [n for n in vowel_sign_glyphs(font) if ink.get(n)]
+    tables = set()
+
+    # How far each subscript drops: enough with 0, 1 or 2 vowel signs before it.
+    font.addLookup(STACK_DROP_BY, "gpos_single", (), ())
+    font.addLookupSubtable(STACK_DROP_BY, f"{STACK_DROP_BY} subtable")
+    tables.add(f"{STACK_DROP_BY} subtable")
+    for sub in subs:
+        stacker = stacked[sub]
+        width = font[stacker].width
+        offsets = {0} | {font[m].width for m in signs}
+        offsets |= {font[a].width + font[b].width for a in signs for b in signs}
+        drop = min(
+            mark_offsets.drop_clear([(x + width + o, y) for x, y in ink[sub]], ink[stacker])
+            for o in sorted(offsets)
+        )
+        if drop:
+            font[sub].addPosSub(f"{STACK_DROP_BY} subtable", 0, drop, 0, 0)
+    font.addLookup(STACK_DROP, "gpos_contextchain", (), (("blwm", SCRIPTS),), STACK_DROP_BY)
+    rules = [
+        f"[{' '.join(stackers)}] |" + " [{0}]" * n + f" [{' '.join(subs)}] @<{STACK_DROP_BY}> |"
+        for n in range(3)
+    ]
+    for n, rule in enumerate(rules):
+        name = f"{STACK_DROP} {n}"
+        font.addContextualSubtable(STACK_DROP, name, "coverage", rule.format(" ".join(signs)))
+        tables.add(name)
+
+    # A vowel sign right after the sign moves right until it clears it.
+    font.addLookup(STACK_KERN, "gpos_contextchain", (), (("dist", SCRIPTS),), STACK_DROP)
+    for k, sign in enumerate(signs, 1):
+        shift = max(
+            mark_offsets.slide_clear(
+                [(x + font[stacker].width, y) for x, y in ink[sign]], ink[stacker]
+            )
+            for stacker in stackers
+        )
+        if not shift:
+            continue
+        kern, back = f"{STACK_KERN_BY} {k}", f"{STACK_BACK_BY} {k}"
+        font.addLookup(kern, "gpos_single", (), (), STACK_KERN)
+        font.addLookupSubtable(kern, f"{kern} subtable")
+        font[sign].addPosSub(f"{kern} subtable", shift, 0, shift, 0)
+        font.addLookup(back, "gpos_single", (), (), kern)
+        font.addLookupSubtable(back, f"{back} subtable")
+        for sub in subs:
+            font[sub].addPosSub(f"{back} subtable", -shift, 0, 0, 0)
+        for n in range(2):
+            name = f"{STACK_KERN} {k} {n}"
+            between = f" [{' '.join(signs)}]" * n
+            font.addContextualSubtable(
+                STACK_KERN,
+                name,
+                "coverage",
+                f"[{' '.join(stackers)}] | [{sign}] @<{kern}>{between}"
+                f" [{' '.join(subs)}] @<{back}> |",
+            )
+            tables.add(name)
+        tables |= {f"{kern} subtable", f"{back} subtable"}
+    return tables
 
 
 def main(path, source):

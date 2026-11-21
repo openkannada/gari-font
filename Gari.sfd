@@ -86,14 +86,539 @@ Lookup: 4 256 0 "Candrabindu after the consonant join 2" { "Candrabindu after th
 Lookup: 2 256 0 "Candrabindu after the consonant split 2" { "Candrabindu after the consonant split 2 subtable"  } ['psts' ('knda' <'dflt' > 'knd2' <'dflt' > ) ]
 Lookup: 4 256 0 "Candrabindu after the consonant join 3" { "Candrabindu after the consonant join 3 subtable"  } ['psts' ('knda' <'dflt' > 'knd2' <'dflt' > ) ]
 Lookup: 2 256 0 "Candrabindu after the consonant split 3" { "Candrabindu after the consonant split 3 subtable"  } ['psts' ('knda' <'dflt' > 'knd2' <'dflt' > ) ]
+Lookup: 257 0 0 "Subscript below a stacker" { "Subscript below a stacker subtable"  } []
+Lookup: 264 0 0 "'blwm' Subscript below jihvamuliya or upadhmaniya" { "'blwm' Subscript below jihvamuliya or upadhmaniya 2"  "'blwm' Subscript below jihvamuliya or upadhmaniya 1"  "'blwm' Subscript below jihvamuliya or upadhmaniya 0"  } ['blwm' ('knda' <'dflt' > 'knd2' <'dflt' > ) ]
+Lookup: 264 0 0 "'dist' Vowel sign clear of jihvamuliya or upadhmaniya" { "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 15 1"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 15 0"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 14 1"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 14 0"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 13 1"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 13 0"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 10 1"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 10 0"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 9 1"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 9 0"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 7 1"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 7 0"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 6 1"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 6 0"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 4 1"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 4 0"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 3 1"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 3 0"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 2 1"  "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 2 0"  } ['dist' ('knda' <'dflt' > 'knd2' <'dflt' > ) ]
+Lookup: 257 0 0 "Vowel sign clear of a stacker 15" { "Vowel sign clear of a stacker 15 subtable"  } []
+Lookup: 257 0 0 "Subscript back under a stacker 15" { "Subscript back under a stacker 15 subtable"  } []
+Lookup: 257 0 0 "Vowel sign clear of a stacker 14" { "Vowel sign clear of a stacker 14 subtable"  } []
+Lookup: 257 0 0 "Subscript back under a stacker 14" { "Subscript back under a stacker 14 subtable"  } []
+Lookup: 257 0 0 "Vowel sign clear of a stacker 13" { "Vowel sign clear of a stacker 13 subtable"  } []
+Lookup: 257 0 0 "Subscript back under a stacker 13" { "Subscript back under a stacker 13 subtable"  } []
+Lookup: 257 0 0 "Vowel sign clear of a stacker 10" { "Vowel sign clear of a stacker 10 subtable"  } []
+Lookup: 257 0 0 "Subscript back under a stacker 10" { "Subscript back under a stacker 10 subtable"  } []
+Lookup: 257 0 0 "Vowel sign clear of a stacker 9" { "Vowel sign clear of a stacker 9 subtable"  } []
+Lookup: 257 0 0 "Subscript back under a stacker 9" { "Subscript back under a stacker 9 subtable"  } []
+Lookup: 257 0 0 "Vowel sign clear of a stacker 7" { "Vowel sign clear of a stacker 7 subtable"  } []
+Lookup: 257 0 0 "Subscript back under a stacker 7" { "Subscript back under a stacker 7 subtable"  } []
+Lookup: 257 0 0 "Vowel sign clear of a stacker 6" { "Vowel sign clear of a stacker 6 subtable"  } []
+Lookup: 257 0 0 "Subscript back under a stacker 6" { "Subscript back under a stacker 6 subtable"  } []
+Lookup: 257 0 0 "Vowel sign clear of a stacker 4" { "Vowel sign clear of a stacker 4 subtable"  } []
+Lookup: 257 0 0 "Subscript back under a stacker 4" { "Subscript back under a stacker 4 subtable"  } []
+Lookup: 257 0 0 "Vowel sign clear of a stacker 3" { "Vowel sign clear of a stacker 3 subtable"  } []
+Lookup: 257 0 0 "Subscript back under a stacker 3" { "Subscript back under a stacker 3 subtable"  } []
+Lookup: 257 0 0 "Vowel sign clear of a stacker 2" { "Vowel sign clear of a stacker 2 subtable"  } []
+Lookup: 257 0 0 "Subscript back under a stacker 2" { "Subscript back under a stacker 2 subtable"  } []
+Lookup: 264 0 0 "'blwm' Subscript below the nukta" { "'blwm' Subscript below the nukta 32"  "'blwm' Subscript below the nukta 31"  "'blwm' Subscript below the nukta 30"  "'blwm' Subscript below the nukta 29"  "'blwm' Subscript below the nukta 28"  "'blwm' Subscript below the nukta 27"  "'blwm' Subscript below the nukta 26"  "'blwm' Subscript below the nukta 25"  "'blwm' Subscript below the nukta 24"  "'blwm' Subscript below the nukta 23"  "'blwm' Subscript below the nukta 22"  "'blwm' Subscript below the nukta 21"  "'blwm' Subscript below the nukta 20"  "'blwm' Subscript below the nukta 19"  "'blwm' Subscript below the nukta 18"  "'blwm' Subscript below the nukta 17"  "'blwm' Subscript below the nukta 16"  "'blwm' Subscript below the nukta 15"  "'blwm' Subscript below the nukta 14"  "'blwm' Subscript below the nukta 13"  "'blwm' Subscript below the nukta 12"  "'blwm' Subscript below the nukta 11"  "'blwm' Subscript below the nukta 10"  "'blwm' Subscript below the nukta 9"  "'blwm' Subscript below the nukta 8"  "'blwm' Subscript below the nukta 7"  "'blwm' Subscript below the nukta 6"  "'blwm' Subscript below the nukta 5"  "'blwm' Subscript below the nukta 4"  "'blwm' Subscript below the nukta 3"  "'blwm' Subscript below the nukta 2"  "'blwm' Subscript below the nukta 1"  } ['blwm' ('knda' <'dflt' > 'knd2' <'dflt' > ) ]
+Lookup: 257 0 0 "Subscript below the nukta 32" { "Subscript below the nukta 32 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 31" { "Subscript below the nukta 31 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 30" { "Subscript below the nukta 30 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 29" { "Subscript below the nukta 29 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 28" { "Subscript below the nukta 28 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 27" { "Subscript below the nukta 27 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 26" { "Subscript below the nukta 26 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 25" { "Subscript below the nukta 25 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 24" { "Subscript below the nukta 24 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 23" { "Subscript below the nukta 23 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 22" { "Subscript below the nukta 22 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 21" { "Subscript below the nukta 21 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 20" { "Subscript below the nukta 20 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 19" { "Subscript below the nukta 19 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 18" { "Subscript below the nukta 18 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 17" { "Subscript below the nukta 17 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 16" { "Subscript below the nukta 16 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 15" { "Subscript below the nukta 15 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 14" { "Subscript below the nukta 14 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 13" { "Subscript below the nukta 13 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 12" { "Subscript below the nukta 12 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 11" { "Subscript below the nukta 11 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 10" { "Subscript below the nukta 10 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 9" { "Subscript below the nukta 9 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 8" { "Subscript below the nukta 8 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 7" { "Subscript below the nukta 7 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 6" { "Subscript below the nukta 6 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 5" { "Subscript below the nukta 5 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 4" { "Subscript below the nukta 4 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 3" { "Subscript below the nukta 3 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 2" { "Subscript below the nukta 2 subtable"  } []
+Lookup: 257 0 0 "Subscript below the nukta 1" { "Subscript below the nukta 1 subtable"  } []
 Lookup: 258 0 0 "'abvm' Candrabindu above the vowel sign" { "'abvm' Candrabindu above the vowel sign subtable"  } ['abvm' ('knda' <'dflt' > 'knd2' <'dflt' > ) ]
 Lookup: 258 256 0 "'abvm' Candrabindu over the consonant" { "'abvm' Candrabindu over the consonant subtable"  } ['abvm' ('knda' <'dflt' > 'knd2' <'dflt' > ) ]
 Lookup: 258 0 0 "'blwm' Nukta below the vowel sign" { "'blwm' Nukta below the vowel sign subtable"  } ['blwm' ('knda' <'dflt' > 'knd2' <'dflt' > ) ]
-Lookup: 258 0 0 "'blwm' Subscript below the nukta" { "'blwm' Subscript below the nukta subtable"  } ['blwm' ('knda' <'dflt' > 'knd2' <'dflt' > ) ]
 Lookup: 258 0 0 "'blwm' Nukta under the consonant" { "'blwm' Nukta under the consonant subtable"  } ['blwm' ('knda' <'dflt' > 'knd2' <'dflt' > ) ]
 MarkAttachClasses: 2
 "Marks other than the nukta" 694 X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g x y brokenbar section dieresis copyright ordfeminine guillemotleft logicalnot less_e.blwf registered overscore degree plusminus twosuperior threesuperior acute mu1 paragraph middot cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis u0C18 u0C19 u0C1A u0C1B u0C1C u0C1D u0C1E u0C1F u0C20 u0C21 u0C22 u0C23 u0C24 u0C25 u0C26 u0C27 u0C28 u0C2A u0C2B u0C2C u0C2D u0C2E uni0C81 uni0CE2 uni0CE3
 DEI: 91125
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 15 1" 0 0 0 1
+ 3 1 0
+  Coverage: 1 x
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 15"
+  SeqLookup: 2 "Subscript back under a stacker 15"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 15 0" 0 0 0 1
+ 2 1 0
+  Coverage: 1 x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 15"
+  SeqLookup: 1 "Subscript back under a stacker 15"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 14 1" 0 0 0 1
+ 3 1 0
+  Coverage: 10 underscore
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 14"
+  SeqLookup: 2 "Subscript back under a stacker 14"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 14 0" 0 0 0 1
+ 2 1 0
+  Coverage: 10 underscore
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 14"
+  SeqLookup: 1 "Subscript back under a stacker 14"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 13 1" 0 0 0 1
+ 3 1 0
+  Coverage: 5 grave
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 13"
+  SeqLookup: 2 "Subscript back under a stacker 13"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 13 0" 0 0 0 1
+ 2 1 0
+  Coverage: 5 grave
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 13"
+  SeqLookup: 1 "Subscript back under a stacker 13"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 10 1" 0 0 0 1
+ 3 1 0
+  Coverage: 1 d
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 10"
+  SeqLookup: 2 "Subscript back under a stacker 10"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 10 0" 0 0 0 1
+ 2 1 0
+  Coverage: 1 d
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 10"
+  SeqLookup: 1 "Subscript back under a stacker 10"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 9 1" 0 0 0 1
+ 3 1 0
+  Coverage: 1 c
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 9"
+  SeqLookup: 2 "Subscript back under a stacker 9"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 9 0" 0 0 0 1
+ 2 1 0
+  Coverage: 1 c
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 9"
+  SeqLookup: 1 "Subscript back under a stacker 9"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 7 1" 0 0 0 1
+ 3 1 0
+  Coverage: 9 backslash
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 7"
+  SeqLookup: 2 "Subscript back under a stacker 7"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 7 0" 0 0 0 1
+ 2 1 0
+  Coverage: 9 backslash
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 7"
+  SeqLookup: 1 "Subscript back under a stacker 7"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 6 1" 0 0 0 1
+ 3 1 0
+  Coverage: 1 b
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 6"
+  SeqLookup: 2 "Subscript back under a stacker 6"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 6 0" 0 0 0 1
+ 2 1 0
+  Coverage: 1 b
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 6"
+  SeqLookup: 1 "Subscript back under a stacker 6"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 4 1" 0 0 0 1
+ 3 1 0
+  Coverage: 1 a
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 4"
+  SeqLookup: 2 "Subscript back under a stacker 4"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 4 0" 0 0 0 1
+ 2 1 0
+  Coverage: 1 a
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 4"
+  SeqLookup: 1 "Subscript back under a stacker 4"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 3 1" 0 0 0 1
+ 3 1 0
+  Coverage: 1 Z
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 3"
+  SeqLookup: 2 "Subscript back under a stacker 3"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 3 0" 0 0 0 1
+ 2 1 0
+  Coverage: 1 Z
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 3"
+  SeqLookup: 1 "Subscript back under a stacker 3"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 2 1" 0 0 0 1
+ 3 1 0
+  Coverage: 1 Y
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 2"
+  SeqLookup: 2 "Subscript back under a stacker 2"
+EndFPST
+ChainPos2: coverage "'dist' Vowel sign clear of jihvamuliya or upadhmaniya 2 0" 0 0 0 1
+ 2 1 0
+  Coverage: 1 Y
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 2
+  SeqLookup: 0 "Vowel sign clear of a stacker 2"
+  SeqLookup: 1 "Subscript back under a stacker 2"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below jihvamuliya or upadhmaniya 2" 0 0 0 1
+ 3 1 0
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 1
+  SeqLookup: 2 "Subscript below a stacker"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below jihvamuliya or upadhmaniya 1" 0 0 0 1
+ 2 1 0
+  Coverage: 71 X Y Z a asciicircum b backslash bracketright c d f g grave underscore x
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 1
+  SeqLookup: 1 "Subscript below a stacker"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below jihvamuliya or upadhmaniya 0" 0 0 0 1
+ 1 1 0
+  Coverage: 45 brokenbar guillemotright ordmasculine section
+  BCoverage: 15 uni0CF1 uni0CF2
+ 1
+  SeqLookup: 0 "Subscript below a stacker"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 32" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 283 AE Aacute Acircumflex Adieresis Agrave Atilde Ccedilla Egrave acute cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter ordfeminine ordmasculine overscore paragraph plusminus registered section threesuperior twosuperior
+  BCoverage: 3 six
+ 1
+  SeqLookup: 1 "Subscript below the nukta 32"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 31" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 372 AE Aacute Acircumflex Adieresis Aring Atilde Ccedilla Edieresis Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus questiondown registered section threequarters threesuperior twosuperior u0C21 u0C22
+  BCoverage: 5 seven
+ 1
+  SeqLookup: 1 "Subscript below the nukta 31"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 30" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 398 AE Aacute Acircumflex Adieresis Agrave Aring Atilde Ccedilla Edieresis Egrave Iacute Igrave Ocircumflex Ograve acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior u0C18 u0C19 u0C21 u0C22 u0C27
+  BCoverage: 9 semicolon
+ 1
+  SeqLookup: 1 "Subscript below the nukta 30"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 29" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 331 AE Aacute Acircumflex Adieresis Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior
+  BCoverage: 8 question
+ 1
+  SeqLookup: 1 "Subscript below the nukta 29"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 28" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 343 AE Aacute Acircumflex Adieresis Aring Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior u0C22
+  BCoverage: 4 nine
+ 1
+  SeqLookup: 1 "Subscript below the nukta 28"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 27" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 305 AE Aacute Acircumflex Adieresis Atilde Ccedilla Egrave Iacute acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threesuperior twosuperior
+  BCoverage: 1 h
+ 1
+  SeqLookup: 1 "Subscript below the nukta 27"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 26" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 157 AE Acircumflex Agrave Atilde Ccedilla Egrave acute copyright degree guillemotleft less_e.blwf mu1 onehalf onequarter ordfeminine overscore registered section
+  BCoverage: 7 greater
+ 1
+  SeqLookup: 1 "Subscript below the nukta 26"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 25" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 353 AE Aacute Acircumflex Adieresis Aring Atilde Ccedilla Edieresis Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior u0C22
+  BCoverage: 4 five
+ 1
+  SeqLookup: 1 "Subscript below the nukta 25"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 24" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 60 Agrave Egrave acute guillemotleft overscore registered u0C25
+  BCoverage: 5 equal
+ 1
+  SeqLookup: 1 "Subscript below the nukta 24"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 23" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 290 AE Aacute Acircumflex Adieresis Agrave Atilde Ccedilla Egrave Iacute acute cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter ordfeminine ordmasculine overscore paragraph plusminus registered section threesuperior twosuperior
+  BCoverage: 5 eight
+ 1
+  SeqLookup: 1 "Subscript below the nukta 23"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 22" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 337 AE Aacute Acircumflex Adieresis Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior u0C22
+  BCoverage: 5 colon
+ 1
+  SeqLookup: 1 "Subscript below the nukta 22"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 21" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 331 AE Aacute Acircumflex Adieresis Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior
+  BCoverage: 1 W
+ 1
+  SeqLookup: 1 "Subscript below the nukta 21"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 20" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 343 AE Aacute Acircumflex Adieresis Aring Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior u0C22
+  BCoverage: 1 V
+ 1
+  SeqLookup: 1 "Subscript below the nukta 20"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 19" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 331 AE Aacute Acircumflex Adieresis Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior
+  BCoverage: 6 U less
+ 1
+  SeqLookup: 1 "Subscript below the nukta 19"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 18" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 372 AE Aacute Acircumflex Adieresis Aring Atilde Ccedilla Edieresis Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus questiondown registered section threequarters threesuperior twosuperior u0C21 u0C22
+  BCoverage: 1 T
+ 1
+  SeqLookup: 1 "Subscript below the nukta 18"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 17" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 372 AE Aacute Acircumflex Adieresis Aring Atilde Ccedilla Edieresis Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus questiondown registered section threequarters threesuperior twosuperior u0C21 u0C22
+  BCoverage: 1 R
+ 1
+  SeqLookup: 1 "Subscript below the nukta 17"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 16" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 331 AE Aacute Acircumflex Adieresis Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior
+  BCoverage: 1 Q
+ 1
+  SeqLookup: 1 "Subscript below the nukta 16"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 15" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 331 AE Aacute Acircumflex Adieresis Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior
+  BCoverage: 1 P
+ 1
+  SeqLookup: 1 "Subscript below the nukta 15"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 14" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 379 AE Aacute Acircumflex Adieresis Aring Atilde Ccedilla Edieresis Egrave Iacute Ocircumflex Ograve acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus questiondown registered section threequarters threesuperior twosuperior u0C21 u0C22
+  BCoverage: 4 O at
+ 1
+  SeqLookup: 1 "Subscript below the nukta 14"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 13" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 109 AE Agrave Atilde Ccedilla Egrave acute guillemotleft less_e.blwf mu1 ordfeminine overscore registered section
+  BCoverage: 1 N
+ 1
+  SeqLookup: 1 "Subscript below the nukta 13"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 12" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 196 AE Acircumflex Agrave Atilde Ccedilla Egrave acute copyright degree guillemotleft guillemotright less_e.blwf logicalnot mu1 onehalf onequarter ordfeminine ordmasculine overscore registered section
+  BCoverage: 1 M
+ 1
+  SeqLookup: 1 "Subscript below the nukta 12"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 11" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 330 AE Aacute Acircumflex Adieresis Agrave Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threesuperior twosuperior u0C22
+  BCoverage: 1 L
+ 1
+  SeqLookup: 1 "Subscript below the nukta 11"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 10" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 331 AE Aacute Acircumflex Adieresis Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior
+  BCoverage: 1 K
+ 1
+  SeqLookup: 1 "Subscript below the nukta 10"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 9" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 324 AE Aacute Acircumflex Adieresis Agrave Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threesuperior twosuperior
+  BCoverage: 1 J
+ 1
+  SeqLookup: 1 "Subscript below the nukta 9"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 8" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 331 AE Aacute Acircumflex Adieresis Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior
+  BCoverage: 1 I
+ 1
+  SeqLookup: 1 "Subscript below the nukta 8"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 7" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 353 AE Aacute Acircumflex Adieresis Aring Atilde Ccedilla Edieresis Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior u0C22
+  BCoverage: 1 H
+ 1
+  SeqLookup: 1 "Subscript below the nukta 7"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 6" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 343 AE Aacute Acircumflex Adieresis Aring Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior u0C22
+  BCoverage: 1 F
+ 1
+  SeqLookup: 1 "Subscript below the nukta 6"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 5" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 378 AE Aacute Acircumflex Adieresis Agrave Aring Atilde Ccedilla Edieresis Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior u0C19 u0C21 u0C22 u0C27
+  BCoverage: 3 E G
+ 1
+  SeqLookup: 1 "Subscript below the nukta 5"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 4" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 379 AE Aacute Acircumflex Adieresis Aring Atilde Ccedilla Edieresis Egrave Iacute Ocircumflex Ograve acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus questiondown registered section threequarters threesuperior twosuperior u0C21 u0C22
+  BCoverage: 1 D
+ 1
+  SeqLookup: 1 "Subscript below the nukta 4"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 3" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 331 AE Aacute Acircumflex Adieresis Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior
+  BCoverage: 1 C
+ 1
+  SeqLookup: 1 "Subscript below the nukta 3"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 2" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 358 AE Aacute Acircumflex Adieresis Agrave Atilde Ccedilla Edieresis Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threesuperior twosuperior u0C19 u0C21 u0C22 u0C27
+  BCoverage: 1 B
+ 1
+  SeqLookup: 1 "Subscript below the nukta 2"
+EndFPST
+ChainPos2: coverage "'blwm' Subscript below the nukta 1" 0 0 0 1
+ 2 1 0
+  Coverage: 7 uni0CBC
+  Coverage: 337 AE Aacute Acircumflex Adieresis Atilde Ccedilla Egrave Iacute Ocircumflex acute brokenbar cedilla copyright degree dieresis guillemotleft guillemotright less_e.blwf logicalnot middot mu1 onehalf onequarter onesuperior ordfeminine ordmasculine overscore paragraph plusminus registered section threequarters threesuperior twosuperior u0C22
+  BCoverage: 3 A S
+ 1
+  SeqLookup: 1 "Subscript below the nukta 1"
+EndFPST
 ChainSub2: coverage "'abvs' Subscript after jihvamuliya or upadhmaniya 0CF2" 0 0 0 1
  1 1 0
   Coverage: 3 I J
@@ -5172,6 +5697,7 @@ SplineSet
  -510 1323 -510 1323 -434 1386 c 1,29,30
 EndSplineSet
 Validated: 1
+Position2: "Vowel sign clear of a stacker 2 subtable" dx=290 dy=0 dh=290 dv=0
 EndChar
 
 StartChar: Z
@@ -5236,6 +5762,7 @@ SplineSet
  -510 1323 -510 1323 -434 1386 c 1,79,80
 EndSplineSet
 Validated: 33
+Position2: "Vowel sign clear of a stacker 3 subtable" dx=290 dy=0 dh=290 dv=0
 EndChar
 
 StartChar: bracketleft
@@ -5316,6 +5843,7 @@ SplineSet
 EndSplineSet
 Validated: 33
 Substitution2: "Single Substitution lookup 19 subtable" y
+Position2: "Vowel sign clear of a stacker 7 subtable" dx=120 dy=0 dh=120 dv=0
 EndChar
 
 StartChar: bracketright
@@ -5431,6 +5959,7 @@ SplineSet
  225 1155 225 1155 225 1219 c 0,26,27
 EndSplineSet
 Validated: 1
+Position2: "Vowel sign clear of a stacker 14 subtable" dx=70 dy=0 dh=70 dv=0
 EndChar
 
 StartChar: grave
@@ -5492,6 +6021,7 @@ SplineSet
  225 1155 225 1155 225 1219 c 0,75,76
 EndSplineSet
 Validated: 33
+Position2: "Vowel sign clear of a stacker 13 subtable" dx=70 dy=0 dh=70 dv=0
 EndChar
 
 StartChar: a
@@ -5556,6 +6086,7 @@ SplineSet
  225 1155 225 1155 225 1219 c 0,83,84
 EndSplineSet
 Validated: 33
+Position2: "Vowel sign clear of a stacker 4 subtable" dx=70 dy=0 dh=70 dv=0
 EndChar
 
 StartChar: b
@@ -5625,6 +6156,7 @@ SplineSet
  225 1155 225 1155 225 1219 c 0,93,94
 EndSplineSet
 Validated: 33
+Position2: "Vowel sign clear of a stacker 6 subtable" dx=70 dy=0 dh=70 dv=0
 EndChar
 
 StartChar: c
@@ -5723,6 +6255,7 @@ SplineSet
  225 1155 225 1155 225 1219 c 0,145,146
 EndSplineSet
 Validated: 33
+Position2: "Vowel sign clear of a stacker 9 subtable" dx=70 dy=0 dh=70 dv=0
 EndChar
 
 StartChar: d
@@ -5771,6 +6304,7 @@ SplineSet
  633 968 633 968 633 1032 c 1,57,58
 EndSplineSet
 Validated: 33
+Position2: "Vowel sign clear of a stacker 10 subtable" dx=50 dy=0 dh=50 dv=0
 EndChar
 
 StartChar: e
@@ -6682,6 +7216,7 @@ SplineSet
 EndSplineSet
 Validated: 33
 Substitution2: "Single Substitution lookup 19 subtable" v
+Position2: "Vowel sign clear of a stacker 15 subtable" dx=190 dy=0 dh=190 dv=0
 EndChar
 
 StartChar: y
@@ -9727,6 +10262,43 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e five
 Substitution2: "Single Substitution lookup 18 subtable" Ecircumflex
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" five e
+Position2: "Subscript back under a stacker 15 subtable" dx=-190 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 14 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 13 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 10 subtable" dx=-50 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 9 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 7 subtable" dx=-120 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 6 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 4 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 3 subtable" dx=-290 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 2 subtable" dx=-290 dy=0 dh=0 dv=0
+Position2: "Subscript below a stacker subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-190 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-160 dh=0 dv=0
 EndChar
 
 StartChar: section
@@ -9785,6 +10357,48 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e six
 Substitution2: "Single Substitution lookup 18 subtable" Edieresis
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" six e
+Position2: "Subscript back under a stacker 15 subtable" dx=-190 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 14 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 13 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 10 subtable" dx=-50 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 9 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 7 subtable" dx=-120 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 6 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 4 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 3 subtable" dx=-290 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 2 subtable" dx=-290 dy=0 dh=0 dv=0
+Position2: "Subscript below a stacker subtable" dx=0 dy=-30 dh=0 dv=0
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-530 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-600 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-200 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-530 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-530 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-510 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-540 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-370 dh=0 dv=0
 EndChar
 
 StartChar: dieresis
@@ -9818,6 +10432,34 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e seven
 Substitution2: "Single Substitution lookup 18 subtable" Igrave
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" seven e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-420 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-270 dh=0 dv=0
 EndChar
 
 StartChar: copyright
@@ -9893,6 +10535,36 @@ Validated: 37
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e eight
 Substitution2: "Single Substitution lookup 18 subtable" Iacute
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" eight e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-210 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-150 dh=0 dv=0
 EndChar
 
 StartChar: ordfeminine
@@ -9972,6 +10644,37 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e nine
 Substitution2: "Single Substitution lookup 18 subtable" Icircumflex
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" nine e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-450 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-520 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-450 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-450 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-460 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-280 dh=0 dv=0
 EndChar
 
 StartChar: guillemotleft
@@ -10053,6 +10756,38 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e colon
 Substitution2: "Single Substitution lookup 18 subtable" Idieresis
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" colon e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 24 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-460 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-190 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-250 dh=0 dv=0
 EndChar
 
 StartChar: logicalnot
@@ -10117,6 +10852,35 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e semicolon
 Substitution2: "Single Substitution lookup 18 subtable" Eth
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" semicolon e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-110 dh=0 dv=0
 EndChar
 
 StartChar: less_e.blwf
@@ -10187,6 +10951,37 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e less
 Substitution2: "Single Substitution lookup 18 subtable" Ntilde
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" less e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-460 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-520 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-450 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-460 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-440 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-460 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-290 dh=0 dv=0
 EndChar
 
 StartChar: registered
@@ -10249,6 +11044,38 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e equal
 Substitution2: "Single Substitution lookup 18 subtable" Ograve
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" equal e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-530 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 24 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-560 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-510 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-500 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-510 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-530 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-370 dh=0 dv=0
 EndChar
 
 StartChar: overscore
@@ -10318,6 +11145,38 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e greater
 Substitution2: "Single Substitution lookup 18 subtable" Oacute
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" greater e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-530 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 24 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-550 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-510 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-500 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-510 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-530 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-370 dh=0 dv=0
 EndChar
 
 StartChar: degree
@@ -10378,6 +11237,36 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e question
 Substitution2: "Single Substitution lookup 18 subtable" Ocircumflex
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" question e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-450 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-540 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-460 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-420 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-300 dh=0 dv=0
 EndChar
 
 StartChar: plusminus
@@ -10417,6 +11306,34 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e at
 Substitution2: "Single Substitution lookup 18 subtable" Otilde
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" at e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-510 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-460 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-450 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-420 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-490 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-500 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-360 dh=0 dv=0
 EndChar
 
 StartChar: twosuperior
@@ -10472,6 +11389,34 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e A
 Substitution2: "Single Substitution lookup 18 subtable" Odieresis
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" A e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-490 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-470 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-480 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-340 dh=0 dv=0
 EndChar
 
 StartChar: threesuperior
@@ -10536,6 +11481,34 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e B
 Substitution2: "Single Substitution lookup 18 subtable" u0C18
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" B e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-490 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-470 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-480 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-340 dh=0 dv=0
 EndChar
 
 StartChar: acute
@@ -10609,6 +11582,38 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e C
 Substitution2: "Single Substitution lookup 18 subtable" u0C19
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" C e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-540 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 24 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-600 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-540 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-540 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-520 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-540 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-370 dh=0 dv=0
 EndChar
 
 StartChar: mu1
@@ -10650,6 +11655,37 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e D
 Substitution2: "Single Substitution lookup 18 subtable" u0C1A
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" D e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-210 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-250 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-210 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-110 dh=0 dv=0
 EndChar
 
 StartChar: paragraph
@@ -10707,6 +11743,34 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e E
 Substitution2: "Single Substitution lookup 18 subtable" u0C1B
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" E e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-500 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-440 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-490 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-490 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-360 dh=0 dv=0
 EndChar
 
 StartChar: middot
@@ -10750,6 +11814,34 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e F
 Substitution2: "Single Substitution lookup 18 subtable" u0C1C
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" F e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-500 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-440 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-490 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-490 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-360 dh=0 dv=0
 EndChar
 
 StartChar: cedilla
@@ -10800,6 +11892,34 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e G
 Substitution2: "Single Substitution lookup 18 subtable" u0C1D
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" G e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-500 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-420 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-480 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-490 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-350 dh=0 dv=0
 EndChar
 
 StartChar: onesuperior
@@ -10840,6 +11960,32 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e H
 Substitution2: "Single Substitution lookup 18 subtable" u0C1E
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" H e
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-30 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-90 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-90 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-90 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-10 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-90 dh=0 dv=0
 EndChar
 
 StartChar: ordmasculine
@@ -10888,6 +12034,45 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e I
 Substitution2: "Single Substitution lookup 18 subtable" u0C1F
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" I e
+Position2: "Subscript back under a stacker 15 subtable" dx=-190 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 14 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 13 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 10 subtable" dx=-50 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 9 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 7 subtable" dx=-120 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 6 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 4 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 3 subtable" dx=-290 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 2 subtable" dx=-290 dy=0 dh=0 dv=0
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-190 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-190 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-170 dh=0 dv=0
 EndChar
 
 StartChar: guillemotright
@@ -10952,6 +12137,45 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e J
 Substitution2: "Single Substitution lookup 18 subtable" u0C20
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" J e
+Position2: "Subscript back under a stacker 15 subtable" dx=-190 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 14 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 13 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 10 subtable" dx=-50 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 9 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 7 subtable" dx=-120 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 6 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 4 subtable" dx=-70 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 3 subtable" dx=-290 dy=0 dh=0 dv=0
+Position2: "Subscript back under a stacker 2 subtable" dx=-290 dy=0 dh=0 dv=0
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-170 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-170 dh=0 dv=0
 EndChar
 
 StartChar: onequarter
@@ -11009,6 +12233,36 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e K
 Substitution2: "Single Substitution lookup 18 subtable" u0C21
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" K e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-480 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-500 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-460 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-450 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-460 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-480 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-320 dh=0 dv=0
 EndChar
 
 StartChar: onehalf
@@ -11072,6 +12326,36 @@ Validated: 37
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e L
 Substitution2: "Single Substitution lookup 18 subtable" u0C22
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" L e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-470 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-520 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-460 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-460 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-450 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-470 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-310 dh=0 dv=0
 EndChar
 
 StartChar: threequarters
@@ -11124,6 +12408,28 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e M
 Substitution2: "Single Substitution lookup 18 subtable" u0C23
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" M e
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-210 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-200 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-200 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-200 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-220 dh=0 dv=0
 EndChar
 
 StartChar: questiondown
@@ -11176,6 +12482,11 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e N
 Substitution2: "Single Substitution lookup 18 subtable" u0C24
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" N e
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-200 dh=0 dv=0
 EndChar
 
 StartChar: Agrave
@@ -11206,6 +12517,17 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e O
 Substitution2: "Single Substitution lookup 18 subtable" u0C25
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" O e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-30 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 24 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-120 dh=0 dv=0
 EndChar
 
 StartChar: Aacute
@@ -11274,6 +12596,34 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e P
 Substitution2: "Single Substitution lookup 18 subtable" u0C26
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" P e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-540 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-470 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-490 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-450 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-520 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-530 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-390 dh=0 dv=0
 EndChar
 
 StartChar: Acircumflex
@@ -11317,6 +12667,36 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e Q
 Substitution2: "Single Substitution lookup 18 subtable" u0C27
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" Q e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-240 dh=0 dv=0
 EndChar
 
 StartChar: Atilde
@@ -11375,6 +12755,37 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e R
 Substitution2: "Single Substitution lookup 18 subtable" u0C28
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" R e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-550 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-240 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-590 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-540 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-540 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-530 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-560 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-390 dh=0 dv=0
 EndChar
 
 StartChar: Adieresis
@@ -11436,6 +12847,34 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e S
 Substitution2: "Single Substitution lookup 18 subtable" u0C2A
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" S e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-450 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-270 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-330 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-440 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-300 dh=0 dv=0
 EndChar
 
 StartChar: Aring
@@ -11483,6 +12922,18 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e T
 Substitution2: "Single Substitution lookup 18 subtable" u0C2B
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" T e
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-30 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-320 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-310 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-340 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-290 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-190 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-10 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-340 dh=0 dv=0
 EndChar
 
 StartChar: AE
@@ -11544,6 +12995,37 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e U
 Substitution2: "Single Substitution lookup 18 subtable" u0C2C
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" U e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-300 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-440 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-260 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-280 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-140 dh=0 dv=0
 EndChar
 
 StartChar: Ccedilla
@@ -11586,6 +13068,37 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e V
 Substitution2: "Single Substitution lookup 18 subtable" u0C2D
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" V e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-210 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-140 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-210 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-430 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-210 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-40 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-210 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-210 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-220 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-380 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-210 dh=0 dv=0
 EndChar
 
 StartChar: Egrave
@@ -11636,6 +13149,38 @@ Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable knd2" e W
 Substitution2: "Single Substitution lookup 18 subtable" u0C2E
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 3 subtable" W e
+Position2: "Subscript below the nukta 32 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-560 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 26 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 24 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-610 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-360 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 13 subtable" dx=0 dy=-410 dh=0 dv=0
+Position2: "Subscript below the nukta 12 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-550 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-550 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-370 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-390 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-540 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-350 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-400 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-560 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-390 dh=0 dv=0
 EndChar
 
 StartChar: Eacute
@@ -11803,6 +13348,16 @@ EndSplineSet
 Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable knd2" e section
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable" section e
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-120 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-40 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-40 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-30 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-100 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-90 dh=0 dv=0
 EndChar
 
 StartChar: Igrave
@@ -11833,6 +13388,7 @@ EndSplineSet
 Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable knd2" e dieresis
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable" dieresis e
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-10 dh=0 dv=0
 EndChar
 
 StartChar: Iacute
@@ -11908,6 +13464,33 @@ EndSplineSet
 Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable knd2" e copyright
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable" copyright e
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 27 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 23 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-190 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-160 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-210 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-230 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-80 dh=0 dv=0
 EndChar
 
 StartChar: Icircumflex
@@ -12246,6 +13829,9 @@ EndSplineSet
 Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable knd2" e registered
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable" registered e
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-10 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-20 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-10 dh=0 dv=0
 EndChar
 
 StartChar: Oacute
@@ -12368,6 +13954,31 @@ EndSplineSet
 Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable knd2" e degree
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable" degree e
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-200 dh=0 dv=0
+Position2: "Subscript below the nukta 29 subtable" dx=0 dy=-10 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 21 subtable" dx=0 dy=-10 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 19 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 16 subtable" dx=0 dy=-10 dh=0 dv=0
+Position2: "Subscript below the nukta 15 subtable" dx=0 dy=-20 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-110 dh=0 dv=0
+Position2: "Subscript below the nukta 10 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 9 subtable" dx=0 dy=-30 dh=0 dv=0
+Position2: "Subscript below the nukta 8 subtable" dx=0 dy=-40 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-60 dh=0 dv=0
+Position2: "Subscript below the nukta 3 subtable" dx=0 dy=-20 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-180 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-50 dh=0 dv=0
 EndChar
 
 StartChar: Otilde
@@ -12519,6 +14130,7 @@ EndSplineSet
 Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable knd2" e threesuperior
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable" threesuperior e
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-20 dh=0 dv=0
 EndChar
 
 StartChar: u0C19
@@ -12587,6 +14199,9 @@ EndSplineSet
 Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable knd2" e acute
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable" acute e
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-50 dh=0 dv=0
 EndChar
 
 StartChar: u0C1A
@@ -12970,6 +14585,14 @@ EndSplineSet
 Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable knd2" e onequarter
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable" onequarter e
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-10 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-90 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-10 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-10 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-20 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-20 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-70 dh=0 dv=0
 EndChar
 
 StartChar: u0C22
@@ -13028,6 +14651,22 @@ EndSplineSet
 Validated: 37
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable knd2" e onehalf
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable" onehalf e
+Position2: "Subscript below the nukta 31 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-150 dh=0 dv=0
+Position2: "Subscript below the nukta 28 subtable" dx=0 dy=-10 dh=0 dv=0
+Position2: "Subscript below the nukta 25 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 22 subtable" dx=0 dy=-10 dh=0 dv=0
+Position2: "Subscript below the nukta 20 subtable" dx=0 dy=-20 dh=0 dv=0
+Position2: "Subscript below the nukta 18 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 17 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 14 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 11 subtable" dx=0 dy=-50 dh=0 dv=0
+Position2: "Subscript below the nukta 7 subtable" dx=0 dy=-70 dh=0 dv=0
+Position2: "Subscript below the nukta 6 subtable" dx=0 dy=-30 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 4 subtable" dx=0 dy=-80 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-130 dh=0 dv=0
+Position2: "Subscript below the nukta 1 subtable" dx=0 dy=-10 dh=0 dv=0
 EndChar
 
 StartChar: u0C23
@@ -13157,6 +14796,7 @@ EndSplineSet
 Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable knd2" e Agrave
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable" Agrave e
+Position2: "Subscript below the nukta 24 subtable" dx=0 dy=-10 dh=0 dv=0
 EndChar
 
 StartChar: u0C26
@@ -13264,6 +14904,9 @@ EndSplineSet
 Validated: 33
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable knd2" e Acircumflex
 Ligature2: "'blwf' Below Base Forms in Kannada lookup 5 subtable" Acircumflex e
+Position2: "Subscript below the nukta 30 subtable" dx=0 dy=-40 dh=0 dv=0
+Position2: "Subscript below the nukta 5 subtable" dx=0 dy=-20 dh=0 dv=0
+Position2: "Subscript below the nukta 2 subtable" dx=0 dy=-20 dh=0 dv=0
 EndChar
 
 StartChar: u0C28
@@ -28997,60 +30640,63 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-60 722 m 0,0,1
- 60 825 60 825 116 912 c 0,2,3
- 173 998 173 998 269 1046 c 0,4,5
- 365 1095 365 1095 479 1095 c 0,6,7
- 585 1095 585 1095 683 1052 c 0,8,9
- 780 1009 780 1009 851 937 c 0,10,11
- 922 864 922 864 964 763 c 0,12,13
- 1006 662 1006 662 1006 551 c 0,14,15
- 1006 447 1006 447 968 351 c 0,16,17
- 930 255 930 255 865 183 c 0,18,19
- 800 111 800 111 706 69 c 0,20,21
- 613 26 613 26 509 26 c 0,22,23
- 480 26 480 26 448 30 c 0,24,25
- 416 35 416 35 373 47 c 0,26,27
- 330 59 330 59 284 88 c 0,28,29
- 238 116 238 116 199 156 c 0,30,31
- 179 177 179 177 179 206 c 0,32,33
- 179 235 179 235 200 256 c 0,34,35
- 221 277 221 277 250 277 c 0,36,37
- 280 277 280 277 301 255 c 0,38,39
- 320 235 320 235 343 219 c 0,40,41
- 367 202 367 202 413 185 c 0,42,43
- 459 168 459 168 509 168 c 0,44,45
- 606 168 606 168 688 219 c 0,46,47
- 770 270 770 270 817 359 c 0,48,49
- 864 447 864 447 864 551 c 0,50,51
- 864 634 864 634 833 709 c 0,52,53
- 802 784 802 784 749 837 c 0,54,55
- 697 890 697 890 626 922 c 0,56,57
- 555 953 555 953 479 953 c 0,58,59
- 407 953 407 953 344 924 c 0,60,61
- 281 895 281 895 241 842 c 0,62,63
- 201 788 201 788 202 722 c 0,64,65
- 202 618 202 618 317 523 c 0,66,67
- 409 447 409 447 492 447 c 0,68,69
- 549 447 549 447 581 478 c 0,70,71
- 613 509 613 509 613 553 c 0,72,73
- 613 594 613 594 588 624 c 0,74,75
- 563 654 563 654 534 655 c 0,76,77
- 518 655 518 655 507 645 c 0,78,79
- 496 636 496 636 494 622 c 0,80,81
- 490 597 490 597 470 580 c 0,82,83
- 450 563 450 563 424 563 c 0,84,85
- 395 563 395 563 374 584 c 0,86,87
- 353 605 353 605 353 635 c 0,88,89
- 353 641 353 641 354 647 c 0,90,91
- 365 711 365 711 416 754 c 0,92,93
- 466 797 466 797 534 797 c 0,94,95
- 625 797 625 797 690 724 c 0,96,97
- 755 651 755 651 755 553 c 0,98,99
- 755 450 755 450 681 378 c 0,100,101
- 607 306 607 306 492 305 c 0,102,103
- 358 305 358 305 227 413 c 0,104,105
- 60 551 60 551 60 722 c 0,0,1
+202 673 m 0,0,1
+ 202 631 202 631 225 590 c 0,2,3
+ 248 550 248 550 280 523 c 0,4,5
+ 313 496 313 496 348 480 c 0,6,7
+ 382 464 382 464 407 464 c 2
+ 411 464 l 2,9,10
+ 414 464 414 464 421 465 c 0,11,12
+ 428 466 428 466 433 468 c 0,13,14
+ 438 470 438 470 443 474 c 0,15,16
+ 447 478 447 478 448 483 c 0,17,18
+ 450 511 450 511 470 530 c 0,19,20
+ 490 549 490 549 519 549 c 0,21,22
+ 548 549 548 549 569 528 c 0,23,24
+ 590 507 590 507 590 478 c 2
+ 590 474 l 1,26,27
+ 586 408 586 408 534 365 c 0,28,29
+ 483 322 483 322 407 322 c 0,30,31
+ 322 322 322 322 232 382 c 0,32,33
+ 203 401 203 401 178 425 c 0,34,35
+ 152 449 152 449 123 485 c 0,36,37
+ 94 521 94 521 77 571 c 0,38,39
+ 60 620 60 620 60 673 c 0,40,41
+ 60 773 60 773 117 855 c 0,42,43
+ 174 937 174 937 269 982 c 0,44,45
+ 364 1027 364 1027 475 1027 c 0,46,47
+ 577 1027 577 1027 674 989 c 0,48,49
+ 770 950 770 950 844 884 c 0,50,51
+ 917 818 917 818 962 721 c 0,52,53
+ 1007 625 1007 625 1006 517 c 0,54,55
+ 1006 417 1006 417 967 326 c 0,56,57
+ 928 235 928 235 862 169 c 0,58,59
+ 796 103 796 103 704 65 c 0,60,61
+ 613 26 613 26 513 26 c 0,62,63
+ 483 26 483 26 450 30 c 0,64,65
+ 418 34 418 34 376 47 c 0,66,67
+ 334 59 334 59 288 83 c 0,68,69
+ 242 108 242 108 202 145 c 1
+ 201 147 l 1
+ 198 150 l 2,72,73
+ 196 152 196 152 193 156 c 0,74,75
+ 191 159 191 159 188 163 c 0,76,77
+ 186 167 186 167 183 173 c 0,78,79
+ 181 178 181 178 180 184 c 0,80,81
+ 179 191 179 191 179 198 c 0,82,83
+ 179 227 179 227 200 248 c 0,84,85
+ 221 269 221 269 250 269 c 0,86,87
+ 277 269 277 269 297 251 c 0,88,89
+ 388 168 388 168 513 168 c 0,90,91
+ 608 168 608 168 689 215 c 0,92,93
+ 770 262 770 262 817 342 c 0,94,95
+ 864 422 864 422 864 517 c 0,96,97
+ 864 620 864 620 809 705 c 0,98,99
+ 754 791 754 791 665 838 c 0,100,101
+ 576 885 576 885 475 885 c 0,102,103
+ 404 885 404 885 343 859 c 0,104,105
+ 281 833 281 833 241 784 c 0,106,107
+ 202 735 202 735 202 673 c 0,0,1
 EndSplineSet
 PairPos2: "'abvm' Candrabindu over the consonant subtable" uni0C81 dx=0 dy=0 dh=0 dv=0 dx=47 dy=0 dh=0 dv=0
 EndChar
@@ -29087,68 +30733,6 @@ PairPos2: "'blwm' Nukta below the vowel sign subtable" u0C46 dx=0 dy=-520 dh=0 d
 PairPos2: "'blwm' Nukta below the vowel sign subtable" u0C3F dx=0 dy=-600 dh=0 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'blwm' Nukta below the vowel sign subtable" u0C3E dx=0 dy=-380 dh=0 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'blwm' Nukta below the vowel sign subtable" u0C37 dx=0 dy=-160 dh=0 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C2E dx=0 dy=0 dh=0 dv=0 dx=0 dy=-183 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C2D dx=0 dy=0 dh=0 dv=0 dx=0 dy=-21 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C2C dx=0 dy=0 dh=0 dv=0 dx=0 dy=-37 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C27 dx=0 dy=0 dh=0 dv=0 dx=0 dy=-150 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C26 dx=0 dy=0 dh=0 dv=0 dx=0 dy=-24 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C25 dx=0 dy=0 dh=0 dv=0 dx=0 dy=-212 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C22 dx=0 dy=0 dh=0 dv=0 dx=0 dy=-285 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C21 dx=0 dy=0 dh=0 dv=0 dx=0 dy=-222 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C20 dx=0 dy=0 dh=0 dv=0 dx=0 dy=-157 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C1F dx=0 dy=0 dh=0 dv=0 dx=0 dy=-44 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C1D dx=0 dy=0 dh=0 dv=0 dx=0 dy=-163 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C1C dx=0 dy=0 dh=0 dv=0 dx=0 dy=-126 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C1B dx=0 dy=0 dh=0 dv=0 dx=0 dy=-183 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C19 dx=0 dy=0 dh=0 dv=0 dx=0 dy=-171 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" u0C18 dx=0 dy=0 dh=0 dv=0 dx=0 dy=-211 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Odieresis dx=0 dy=0 dh=0 dv=0 dx=0 dy=-93 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Otilde dx=0 dy=0 dh=0 dv=0 dx=0 dy=-87 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Ocircumflex dx=0 dy=0 dh=0 dv=0 dx=0 dy=-271 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Oacute dx=0 dy=0 dh=0 dv=0 dx=0 dy=-155 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Ograve dx=0 dy=0 dh=0 dv=0 dx=0 dy=-237 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Ntilde dx=0 dy=0 dh=0 dv=0 dx=0 dy=-216 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Eth dx=0 dy=0 dh=0 dv=0 dx=0 dy=-182 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Idieresis dx=0 dy=0 dh=0 dv=0 dx=0 dy=-184 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Icircumflex dx=0 dy=0 dh=0 dv=0 dx=0 dy=-205 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Iacute dx=0 dy=0 dh=0 dv=0 dx=0 dy=-279 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Igrave dx=0 dy=0 dh=0 dv=0 dx=0 dy=-205 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Edieresis dx=0 dy=0 dh=0 dv=0 dx=0 dy=-263 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Ecircumflex dx=0 dy=0 dh=0 dv=0 dx=0 dy=-90 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Egrave dx=0 dy=0 dh=0 dv=0 dx=0 dy=-607 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Ccedilla dx=0 dy=0 dh=0 dv=0 dx=0 dy=-429 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" AE dx=0 dy=0 dh=0 dv=0 dx=0 dy=-361 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Aring dx=0 dy=0 dh=0 dv=0 dx=0 dy=-561 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Adieresis dx=0 dy=0 dh=0 dv=0 dx=0 dy=-561 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Atilde dx=0 dy=0 dh=0 dv=0 dx=0 dy=-597 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Acircumflex dx=0 dy=0 dh=0 dv=0 dx=0 dy=-440 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Aacute dx=0 dy=0 dh=0 dv=0 dx=0 dy=-597 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" Agrave dx=0 dy=0 dh=0 dv=0 dx=0 dy=-572 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" threequarters dx=0 dy=0 dh=0 dv=0 dx=0 dy=-580 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" onehalf dx=0 dy=0 dh=0 dv=0 dx=0 dy=-515 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" onequarter dx=0 dy=0 dh=0 dv=0 dx=0 dy=-515 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" guillemotright dx=0 dy=0 dh=0 dv=0 dx=0 dy=-371 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" ordmasculine dx=0 dy=0 dh=0 dv=0 dx=0 dy=-384 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" onesuperior dx=0 dy=0 dh=0 dv=0 dx=0 dy=-388 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" cedilla dx=0 dy=0 dh=0 dv=0 dx=0 dy=-609 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" middot dx=0 dy=0 dh=0 dv=0 dx=0 dy=-620 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" paragraph dx=0 dy=0 dh=0 dv=0 dx=0 dy=-620 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" mu1 dx=0 dy=0 dh=0 dv=0 dx=0 dy=-504 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" acute dx=0 dy=0 dh=0 dv=0 dx=0 dy=-599 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" threesuperior dx=0 dy=0 dh=0 dv=0 dx=0 dy=-597 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" twosuperior dx=0 dy=0 dh=0 dv=0 dx=0 dy=-597 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" plusminus dx=0 dy=0 dh=0 dv=0 dx=0 dy=-599 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" degree dx=0 dy=0 dh=0 dv=0 dx=0 dy=-554 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" overscore dx=0 dy=0 dh=0 dv=0 dx=0 dy=-570 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" registered dx=0 dy=0 dh=0 dv=0 dx=0 dy=-570 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" less_e.blwf dx=0 dy=0 dh=0 dv=0 dx=0 dy=-515 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" logicalnot dx=0 dy=0 dh=0 dv=0 dx=0 dy=-335 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" guillemotleft dx=0 dy=0 dh=0 dv=0 dx=0 dy=-462 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" ordfeminine dx=0 dy=0 dh=0 dv=0 dx=0 dy=-550 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" copyright dx=0 dy=0 dh=0 dv=0 dx=0 dy=-604 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" dieresis dx=0 dy=0 dh=0 dv=0 dx=0 dy=-521 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" section dx=0 dy=0 dh=0 dv=0 dx=0 dy=-591 dh=0 dv=0
-PairPos2: "'blwm' Subscript below the nukta subtable" brokenbar dx=0 dy=0 dh=0 dv=0 dx=0 dy=-374 dh=0 dv=0
 PairPos2: "'blwm' Nukta below the vowel sign subtable" y dx=0 dy=-420 dh=0 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'blwm' Nukta below the vowel sign subtable" v dx=-400 dy=-200 dh=0 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar

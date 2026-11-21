@@ -156,3 +156,8 @@ def test_draw_contours_raises_quadratics_exactly(tmp_path):
     assert contours == 2
     # The off-curve-only square is a round contour inside it; the D shape starts at x 400.
     assert [round(v) for v in bounds] == [0, 0, 400, 100]
+
+
+def test_sample_follows_on_curve_segments():
+    square = [(0, 0, True), (100, 0, True), (100, 100, True), (0, 100, True)]
+    assert mark_offsets.sample(square) == [(0, 0), (100, 0), (100, 100), (0, 100), (0, 0)]

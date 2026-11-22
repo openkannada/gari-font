@@ -1,8 +1,31 @@
 # Gari
 
-Gari is a Kannada handwriting-style font. It is a modified version of Navilu by Aravinda VK, which is based on work by the Indian Institute of Science, Bangalore.
+Gari is a free, handwriting-style Kannada font, built on Navilu by Aravinda VK. It adds the new-order Kannada shaping (`knd2`) that HarfBuzz and DirectWrite use, the engines behind browsers, LibreOffice and Windows, and the newest Unicode letters. Version 1.300 shapes 2,035 of the 2,146 Kannada test strings in [font-health-action](https://github.com/openkannada/font-health-action) correctly.
 
-Navilu is licensed under the SIL Open Font License 1.1 with the Reserved Font Name "Navilu". The license does not allow a modified version to use that name, so this version is called Gari.
+Navilu, which is based on work by the Indian Institute of Science, Bangalore, is licensed under the SIL Open Font License 1.1 with the Reserved Font Name "Navilu". The license does not allow a modified version to use that name, so this version is called Gari.
+
+## Quick start
+
+Download [Gari-1.300.zip](https://github.com/openkannada/gari-font/releases/download/v1.300/Gari-1.300.zip). It holds TTF, OTF and WOFF2 files and a Kannada-only web font for websites:
+
+```css
+@font-face { font-family: "Gari"; src: url("web/Gari-Kannada.woff2") format("woff2"); }
+:lang(kn) { font-family: "Gari", sans-serif; }
+```
+
+See it beside Neha Sans and Neha Serif at [openkannada.org/fonts](https://openkannada.org/fonts/).
+
+## Results
+
+Measured on `Gari.ttf` 1.300 with [font-health-action](https://github.com/openkannada/font-health-action) and Shaperglot. [font-health/baseline.json](font-health/baseline.json) lists every known failure.
+
+| Check | Result |
+|---|---|
+| Kannada shaping strings that shape correctly | 2,035 of 2,146 |
+| Clusters with no conjunct | 35, all ending in ೞ |
+| Strings with a missing glyph | 76, mostly ೢ and ೣ |
+| Marks that touch another glyph, for a person to judge | 8 |
+| Shaperglot `kn_Knda` | 20%: only the code point check fails, on the missing nukta and avagraha; every shaping check passes |
 
 ## Changes from Navilu 1.2
 
@@ -42,6 +65,13 @@ CI also runs [font-health-action](https://github.com/openkannada/font-health-act
 `tools/release.py` builds the TTF from `Gari.sfd` as `make` does (`generate.pe`, then `tools/finish.py`) and an OTF with FontForge, both in `build/release/` so the committed `Gari.ttf` is left alone, and writes `dist/Gari/` and `dist/Gari-1.300.zip` with a `.sha256` file. The folder holds the TTF and OTF, WOFF2 for the web, `web/Gari-Kannada.woff2` cut to Kannada for websites, a 1-page `specimen.html`, `OFL.txt`, `FONTLOG.txt` and `SHA256SUMS`.
 
 `tools/check_release.py` runs fontspector with the Google Fonts profile, Shaperglot for `kn_Knda`, and the tests on the release font. `release/known-fails.toml` lists what fails for reasons outside the release, with the reason: Gari has no Latin letters, and it has no nukta (U+0CBC) or avagraha (U+0CBD) yet, so Shaperglot scores `kn_Knda` at 20%: its mandatory codepoint check fails on those 2 characters and every other check passes. The `Release build` workflow does all of this and keeps the zip, its checksum and the reports as artifacts. It sets `SOURCE_DATE_EPOCH` to the time of the commit under test, so a build with the same FontForge version gives the same bytes. Different FontForge versions order 2 GSUB feature records differently, which changes no shaping.
+
+## Related
+
+- [Neha Sans and Neha Serif](https://github.com/openkannada/noto-kannada-fork): text fonts for Kannada, built from Noto.
+- [font-health-action](https://github.com/openkannada/font-health-action): the Kannada shaping tests Gari runs on every commit.
+- [kannadi](https://github.com/openkannada/kannadi): converts old Nudi and Baraha documents to Unicode, so they can be set in fonts like this one.
+- [Navilu](https://github.com/aravindavk/navilu): the upstream font by Aravinda VK.
 
 ## License
 

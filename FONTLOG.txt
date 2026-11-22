@@ -17,6 +17,9 @@ Gari comes as 1 style, Regular, in TTF and OTF, and as WOFF2 for the web.
 ChangeLog
 ---------
 
+Unreleased
+- The 11 Kannada-block signs Gari lacked, drawn in its own stroke: spacing candrabindu (U+0C80), candrabindu (U+0C81), siddham (U+0C84), nukta (U+0CBC), avagraha (U+0CBD), the vocalic L and LL signs (U+0CE2, U+0CE3), jihvamuliya (U+0CF1), upadhmaniya (U+0CF2), danda (U+0964) and double danda (U+0965). Noto Sans Kannada and Tiro Kannada were the references for each sign's structure, size and position; no outlines were copied. After jihvamuliya and upadhmaniya, the consonant that follows takes its subscript form, as Unicode 15 describes. A consonant with a nukta keeps its vowel sign and conjunct forms, the nukta and candrabindu are positioned clear of the letters around them, and the siddham stays open at 12 px. They are drafts that a Kannada reader has yet to approve.
+
 2026-11-18 (version 1.300)
 - Renamed from Navilu to Gari.
 - New-order Kannada shaping (knd2), which HarfBuzz and DirectWrite use when a font has it, alongside the old knda rules.
@@ -36,6 +39,14 @@ W: http://aravindavk.in
 N: Indian Institute of Science, Bangalore
 C: The glyphs Navilu was drawn from, 2005-2010
 
+N: The Noto Project Authors
+C: Noto Sans Kannada 2.006 (OFL 1.1), a structural reference for the signs added after 1.300; no outlines copied
+W: https://github.com/notofonts/kannada
+
+N: The Indigo Project Authors (Tiro Typeworks: John Hudson and Fiona Ross)
+C: Tiro Kannada 1.65 (OFL 1.1), a structural reference for the signs added after 1.300; no outlines copied
+W: https://github.com/TiroTypeworks/Indigo
+
 N: The Open Kannada Authors
-C: Gari: knd2 shaping, the new letters and the release
+C: Gari: knd2 shaping, the new letters and signs, and the release
 W: https://github.com/openkannada

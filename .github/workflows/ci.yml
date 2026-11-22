@@ -20,8 +20,8 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends fontforge
       - name: Build the font from the source
         run: rm -f Gari.ttf && uv run make && test -s Gari.ttf
-      - run: uv run ruff check tests tools/add_knd2.py tools/finish.py tools/release.py tools/check_release.py tools/specimen.py tools/shaperglot_gate.py
-      - run: uv run ruff format --check tests tools/add_knd2.py tools/finish.py tools/release.py tools/check_release.py tools/specimen.py tools/shaperglot_gate.py
+      - run: uv run ruff check tests tools/add_knd2.py tools/finish.py tools/release.py tools/check_release.py tools/specimen.py tools/shaperglot_gate.py tools/add_signs.py tools/sfd_splice.py tools/mark_offsets.py
+      - run: uv run ruff format --check tests tools/add_knd2.py tools/finish.py tools/release.py tools/check_release.py tools/specimen.py tools/shaperglot_gate.py tools/add_signs.py tools/sfd_splice.py tools/mark_offsets.py
       - name: Test the font built from the source
         run: uv run pytest -q
 
@@ -33,4 +33,3 @@ jobs:
         with:
           fonts: Gari.ttf
           baseline: font-health/baseline.json
-          allow-missing: U+0CBC U+0CBD

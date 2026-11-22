@@ -33,6 +33,7 @@ See `ChangeLog`. In short:
 
 - New-order Kannada shaping (`knd2`), which HarfBuzz and DirectWrite use when a font has it, alongside the old `knda` rules.
 - U+0CDC ARCHAIC SHRII, U+0CDD NAKAARA POLLU and U+0CF3 COMBINING ANUSVARA ABOVE RIGHT.
+- The rest of the Kannada block and the dandas: ಀ ಁ ಄ ಼ ಽ ೢ ೣ ೱ ೲ । ॥, drawn in Gari's own stroke.
 
 ## Install
 
@@ -46,6 +47,8 @@ Build `Gari.ttf` from `Gari.sfd` with FontForge, then finish it with `tools/fini
 
 `make fedora` writes source and binary tarballs to `/tmp`; the source tarball includes `tools/finish.py`.
 
+`sources/signs.json` holds the skeletons of the signs added after 1.300, and `tools/add_signs.py` strokes them with Gari's round pen and adds them to `Gari.sfd` (`fontforge -lang=py -script tools/add_signs.py Gari.sfd`). It also adds the shaping the signs need (its docstring lists it), with `tools/mark_offsets.py` working out where the nukta and candrabindu go and `tools/sfd_splice.py` copying only the additions into the source. It refuses a character that already has a glyph, so edit a sign in `Gari.sfd` itself once it is there.
+
 ## Test
 
 Run the shaping tests against the built font (needs [uv](https://docs.astral.sh/uv/)):
@@ -54,7 +57,7 @@ Run the shaping tests against the built font (needs [uv](https://docs.astral.sh/
 
 Set `FONT=path/to/font.ttf` to test another build.
 
-CI also runs [font-health-action](https://github.com/openkannada/font-health-action) on `Gari.ttf`: 2,146 Kannada shaping strings and Shaperglot's `kn_Knda` checks. [font-health/baseline.json](font-health/baseline.json) lists the failures Gari has today (35 clusters ending in ೞ with no conjunct, 76 strings with a missing glyph, mostly ೢ and ೣ), so the check fails only on new ones. Shaperglot passes with the nukta and avagraha allowed to be missing, as in `release/known-fails.toml`. The job checks the committed `Gari.ttf`, so rebuild it with the source change. Shrink the baseline as gaps are fixed.
+CI also runs [font-health-action](https://github.com/openkannada/font-health-action) on `Gari.ttf`: 2,146 Kannada shaping strings and Shaperglot's `kn_Knda` checks. [font-health/baseline.json](font-health/baseline.json) lists the failures Gari has today (35 clusters ending in ೞ with no conjunct), so the check fails only on new ones. Shaperglot reports full `kn_Knda` support. The job checks the committed `Gari.ttf`, so rebuild it with the source change. Shrink the baseline as gaps are fixed.
 
 ## Release
 
@@ -64,7 +67,7 @@ CI also runs [font-health-action](https://github.com/openkannada/font-health-act
 
 `tools/release.py` builds the TTF from `Gari.sfd` as `make` does (`generate.pe`, then `tools/finish.py`) and an OTF with FontForge, both in `build/release/` so the committed `Gari.ttf` is left alone, and writes `dist/Gari/` and `dist/Gari-1.300.zip` with a `.sha256` file. The folder holds the TTF and OTF, WOFF2 for the web, `web/Gari-Kannada.woff2` cut to Kannada for websites, a 1-page `specimen.html`, `OFL.txt`, `FONTLOG.txt` and `SHA256SUMS`.
 
-`tools/check_release.py` runs fontspector with the Google Fonts profile, Shaperglot for `kn_Knda`, and the tests on the release font. `release/known-fails.toml` lists what fails for reasons outside the release, with the reason: Gari has no Latin letters, and it has no nukta (U+0CBC) or avagraha (U+0CBD) yet, so Shaperglot scores `kn_Knda` at 20%: its mandatory codepoint check fails on those 2 characters and every other check passes. The `Release build` workflow does all of this and keeps the zip, its checksum and the reports as artifacts. It sets `SOURCE_DATE_EPOCH` to the time of the commit under test, so a build with the same FontForge version gives the same bytes. Different FontForge versions order 2 GSUB feature records differently, which changes no shaping.
+`tools/check_release.py` runs fontspector with the Google Fonts profile, Shaperglot for `kn_Knda`, and the tests on the release font. `release/known-fails.toml` lists what fails for reasons outside the release, with the reason: Gari has no Latin letters. Shaperglot reports full `kn_Knda` support. The `Release build` workflow does all of this and keeps the zip, its checksum and the reports as artifacts. It sets `SOURCE_DATE_EPOCH` to the time of the commit under test, so a build with the same FontForge version gives the same bytes. Different FontForge versions order 2 GSUB feature records differently, which changes no shaping.
 
 ## Related
 

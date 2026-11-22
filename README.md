@@ -1,6 +1,6 @@
 # Gari
 
-Gari is a free, handwriting-style Kannada font, built on Navilu by Aravinda VK. It adds modern Kannada shaping and the newest Unicode letters to Navilu, so it shapes correctly in HarfBuzz and DirectWrite, the engines behind browsers, LibreOffice and Windows. Version 1.300 shapes 2,035 of the 2,146 Kannada test strings in [font-health-action](https://github.com/openkannada/font-health-action) correctly.
+Gari is a free, handwriting-style Kannada font, built on Navilu by Aravinda VK. It adds the new-order Kannada shaping (`knd2`) that HarfBuzz and DirectWrite use, the engines behind browsers, LibreOffice and Windows, and the newest Unicode letters. Version 1.300 shapes 2,035 of the 2,146 Kannada test strings in [font-health-action](https://github.com/openkannada/font-health-action) correctly.
 
 Navilu, which is based on work by the Indian Institute of Science, Bangalore, is licensed under the SIL Open Font License 1.1 with the Reserved Font Name "Navilu". The license does not allow a modified version to use that name, so this version is called Gari.
 
@@ -25,7 +25,7 @@ Measured on `Gari.ttf` 1.300 with [font-health-action](https://github.com/openka
 | Clusters with no conjunct | 35, all ending in ೞ |
 | Strings with a missing glyph | 76, mostly ೢ and ೣ |
 | Marks that touch another glyph, for a person to judge | 8 |
-| Shaperglot `kn_Knda` | passes with the nukta and avagraha allowed to be missing |
+| Shaperglot `kn_Knda` | 20%: only the code point check fails, on the missing nukta and avagraha; every shaping check passes |
 
 ## Changes from Navilu 1.2
 

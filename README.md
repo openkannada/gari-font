@@ -68,7 +68,7 @@ CI also runs [font-health-action](https://github.com/openkannada/font-health-act
 
 ## Related
 
-- [Neha Sans and Neha Serif](https://github.com/openkannada/noto-kannada-fork): text fonts for Kannada, built from Noto.
+- [Neha Sans and Neha Serif](https://github.com/openkannada/neha-fonts): text fonts for Kannada, built from Noto.
 - [font-health-action](https://github.com/openkannada/font-health-action): the Kannada shaping tests Gari runs on every commit.
 - [kannadi](https://github.com/openkannada/kannadi): converts old Nudi and Baraha documents to Unicode, so they can be set in fonts like this one.
 - [Navilu](https://github.com/aravindavk/navilu): the upstream font by Aravinda VK.
